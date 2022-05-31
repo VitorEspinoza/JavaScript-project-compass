@@ -1,0 +1,31 @@
+$primaryColor: #074EE8;
+$textColor: #111111;
+$inputColor: #767676;
+
+$inter: 'Inter', sans-serif;
+$nunito: 'Nunito', sans-serif;
+
+$tablet: 768px;
+$mobileL: 425px;
+$mobileS: 320px;
+
+@mixin responsive($dispositive) {
+  @if $dispositive == tablet {
+    @media only screen and (min-width: #{$tablet}) {
+      @content;
+    }
+  } @else if $dispositive == mobileL {
+    @media only screen and (min-width: #{$mobileL}) and (max-width: #{$tablet - 1}) {
+      @content;
+    }
+  } @else if $dispositivo == mobileS {
+    @media only screen and (max-width: #{$mobileL - 1}) {
+      @content;
+    }
+  }
+}
+
+@mixin font($size, $family) {
+  font-family: $family;
+  font-size: $size;
+}
