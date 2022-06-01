@@ -65,7 +65,7 @@ img {
       flex-wrap: wrap;
 }
 
-.input {
+input {
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -75,6 +75,7 @@ img {
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .btnActive {
@@ -94,5 +95,107 @@ img {
   border: none;
   outline: none;
   text-decoration: none;
+}
+
+.container {
+  max-width: 617px;
+  margin: 0 auto;
+}
+
+.container::after, .container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.active {
+  color: #074EE8;
+  -webkit-box-shadow: inset 0px -3px 0px #074EE8 !important;
+          box-shadow: inset 0px -3px 0px #074EE8 !important;
+}
+
+.second-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+#second-tab-h1 {
+  padding: 5%;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  width: 755px;
+  height: 52px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #111111;
+  margin: auto;
+}
+
+.flex-item {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #111111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+#seconde-tab-ul {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+#socond-tab-li {
+  -webkit-box-shadow: inset 0px -3px 0px #074EE8;
+          box-shadow: inset 0px -3px 0px #074EE8;
+}
+
+li {
+  -webkit-box-shadow: inset 0px -2px 0px #767676;
+          box-shadow: inset 0px -2px 0px #767676;
+}
+
+.second-tab-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+button {
+  background: #ffffff;
+  color: #074EE8;
+  border-color: #074EE8;
+  padding: 0px 12px 0px 12px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+img {
+  display: none;
+}
+
+button:hover {
+  background: #074EE8;
+  color: #ffffff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

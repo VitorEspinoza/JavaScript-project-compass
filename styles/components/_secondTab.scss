@@ -1,0 +1,78 @@
+
+.second-tab{
+    display: flex;
+    text-align: center;   
+    
+}
+
+#second-tab-h1{
+    padding: 5%;
+    @include font (18px, $inter);
+    width: 755px;
+    height: 52px;
+    font-weight: 600;
+    font-size: 18px;
+    color: $textColor;
+    margin: auto;
+}
+
+.flex-item{
+    @include font (16px, $nunito);
+    color: $textColor;
+    display: flex;
+    padding: 2%;
+    flex-wrap: nowrap;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+
+
+#seconde-tab-ul{
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    
+    
+}
+#socond-tab-li{
+    box-shadow: inset 0px -3px 0px $primaryColor;
+}
+
+li{
+    
+    box-shadow: inset 0px -2px 0px $inputColor;
+}
+
+
+
+.second-tab-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+button{
+    background: #ffffff;
+    color: $primaryColor;
+    border-color: $primaryColor;
+    padding: 0px 12px 0px 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+img{
+    display: none;
+}
+
+
+button:hover{
+    background: $primaryColor;
+    color: #ffffff;
+    justify-content: space-between;
+    
+    
+}

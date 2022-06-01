@@ -10,7 +10,7 @@ img {
   flex-wrap: wrap;
 }
 
-.input {
+input {
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -19,6 +19,7 @@ img {
   border: 2px solid #AAA;
   outline: none;
   box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .btnActive {
@@ -39,3 +40,20 @@ img {
   outline: none;
   text-decoration: none;
 }
+
+.container {
+  max-width: 617px;
+  margin: 0 auto;
+  
+  &::after,
+  &::before {
+  content: "";
+  display: table;
+  clear: both;
+  }
+ }
+  
+ .active {
+  color: $primaryColor;
+  box-shadow: inset 0px -3px 0px $primaryColor !important;
+ }
