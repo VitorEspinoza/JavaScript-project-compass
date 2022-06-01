@@ -66,7 +66,8 @@ img {
 }
 
 input {
-  font-family: 'Nunito', sans-serif;
+  display: block;
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -75,6 +76,8 @@ input {
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 11px 0 11px 12px;
+  width: 510px;
   border-radius: 4px;
 }
 
@@ -84,7 +87,7 @@ input {
 }
 
 .btn {
-  padding: 0px 12px 0px 12px;
+  padding: 11px 12px;
   background-color: #074EE8;
   border-radius: 4px;
   font-family: 'Nunito', sans-serif;
@@ -114,88 +117,107 @@ input {
           box-shadow: inset 0px -3px 0px #074EE8 !important;
 }
 
-.second-tab {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-}
-
-#second-tab-h1 {
-  padding: 5%;
+.tab h1 {
   font-family: "Inter", sans-serif;
   font-size: 18px;
-  width: 755px;
-  height: 52px;
+  line-height: 24px;
   font-weight: 600;
-  font-size: 18px;
-  color: #111111;
-  margin: auto;
+  margin-top: 55px;
+  margin-bottom: 35px;
 }
 
-.flex-item {
+.tab > div {
+  display: table;
+  margin: 0 auto;
+}
+
+.tab ul {
+  margin-bottom: 35px;
+}
+
+.tab ul li {
+  text-align: center;
+  padding: 13px 0;
+  width: 170px;
+  -webkit-box-shadow: inset 0px -2px 0px #AAAAAA;
+          box-shadow: inset 0px -2px 0px #AAAAAA;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
-  color: #111111;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2%;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  padding-left: 6%;
-  padding-right: 6%;
+  cursor: pointer;
 }
 
-#seconde-tab-ul {
-  font-weight: 600;
+.tab form {
+  max-width: 515px;
+}
+
+.tab label {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  color: #767676;
+}
+
+.tab input {
+  margin-top: 4px;
+}
+
+.tab input::-webkit-input-placeholder {
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
-  line-height: 18px;
+  color: #767676;
 }
 
-#socond-tab-li {
-  -webkit-box-shadow: inset 0px -3px 0px #074EE8;
-          box-shadow: inset 0px -3px 0px #074EE8;
+.tab input:-ms-input-placeholder {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #767676;
 }
 
-li {
-  -webkit-box-shadow: inset 0px -2px 0px #767676;
-          box-shadow: inset 0px -2px 0px #767676;
+.tab input::-ms-input-placeholder {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #767676;
 }
 
-.second-tab-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.tab input::placeholder {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #767676;
+}
+
+.tab .linkedin {
+  margin-bottom: 28px;
+}
+
+.tab .github {
+  margin-bottom: 270px;
+}
+
+.tab .next {
+  margin-bottom: 60px;
+  margin-top: 43px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-button {
-  background: #ffffff;
-  color: #074EE8;
-  border-color: #074EE8;
-  padding: 0px 12px 0px 12px;
-  border-radius: 4px;
+.tab .next .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80px;
+  height: 40px;
+  border: 2px solid #074EE8;
+  background-color: #FFF;
+  color: #074EE8;
   cursor: pointer;
 }
 
-img {
+.tab .next img {
   display: none;
-}
-
-button:hover {
-  background: #074EE8;
-  color: #ffffff;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

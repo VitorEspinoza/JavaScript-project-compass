@@ -18,7 +18,7 @@ $mobileS: 320px;
     @media only screen and (min-width: #{$mobileL}) and (max-width: #{$tablet - 1}) {
       @content;
     }
-  } @else if $dispositivo == mobileS {
+  } @else if $dispositive == mobileS {
     @media only screen and (max-width: #{$mobileL - 1}) {
       @content;
     }

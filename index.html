@@ -13,37 +13,34 @@
 </head>
 
 <body>
-  <section class="container">
+  <section class="second-tab tab container">
     <div>
-      <h1 id="second-tab-h1">Team Sign Up</h1>
-
-      <nav>
-        <ul class="flex-item" id="socond-tab-ul">
-          <li class="flex-item">Basic</li>
-          <li class="flex-item" id="socond-tab-li">Social</li>
-          <li class="flex-item">Certificates</li>
+      <div>
+        <h1>Team Sign Up</h1>
+        <ul class="flex">
+          <li>Basic</li>
+          <li class="active">Social</li>
+          <li>Certificates</li>
         </ul>
-      </nav>
-      <form action="">
-        <div class="LinkedIn">
-          <label for="LinkedIn">LinkedIn<input type="text"
-              placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/"></label>
-        </div>
-        <div class="Github">
-          <label for="Github">Github&#42;<input type="text" placeholder="https://github.com/foobar" required></label>
-        </div>
-      </form>
-      <div class="second-tab-btn">
-        <button class="btn-next">
-          <p class="p-next">Next</p>
-          <img class="img-next" src="img/sinal-maior.svg" alt=" Next &#62;">
-        </button>
       </div>
+        <form action="">
+          <div class="linkedin">
+            <label for="LinkedIn">LinkedIn</label>
+            <input type="text" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" name="LinkedIn">
+          </div>
+          <div class="github">
+            <label for="Github">Github&#42;</label>
+            <input type="text" placeholder="https://github.com/foobar" required name="Github">
+          </div>
+          <div class="flex next">
+            <button class="btn">
+              Next
+              <img src="img/sinal-maior.svg" alt="Next&#62;">
+            </button>
+          </div>
+        </form>
+    </div> 
   </section>
-
-  <div>
-
-  </div>
 </body>
 
 </html>

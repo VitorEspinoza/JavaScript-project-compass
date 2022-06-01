@@ -1,78 +1,76 @@
+.tab {
+    h1 {
+        @include font(18px, $inter);
+        line-height: 24px;
+        font-weight: 600;
+        margin-top: 55px;
+        margin-bottom: 35px;
+    }
 
-.second-tab{
-    display: flex;
-    text-align: center;   
+    & > div {
+        display: table;
+        margin: 0 auto;
+    }
+
+    ul 
+    {
+        margin-bottom: 35px;
+        li {
+            text-align: center;
+            padding: 13px 0;
+            width: 170px;
+            box-shadow: inset 0px -2px 0px #AAAAAA;
+            @include font(16px, $nunito);
+            cursor: pointer;
+        }
+    }
     
-}
+    form {
+        max-width: 515px
+    }
 
-#second-tab-h1{
-    padding: 5%;
-    @include font (18px, $inter);
-    width: 755px;
-    height: 52px;
-    font-weight: 600;
-    font-size: 18px;
-    color: $textColor;
-    margin: auto;
-}
+    label {
+        @include font(14px, $nunito);
+        color: $inputColor;
+    }
 
-.flex-item{
-    @include font (16px, $nunito);
-    color: $textColor;
-    display: flex;
-    padding: 2%;
-    flex-wrap: nowrap;
-    padding-left: 6%;
-    padding-right: 6%;
-}
+    input {
+        margin-top: 4px;
+    }
 
+    input::placeholder {
+        @include font(16px, $nunito);
+        color: $inputColor;
+    }
 
+    .linkedin {
+        margin-bottom: 28px;
+    }
 
-#seconde-tab-ul{
+    .github {
+        margin-bottom: 270px;
+    }
 
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 18px;
-    
-    
-}
-#socond-tab-li{
-    box-shadow: inset 0px -3px 0px $primaryColor;
-}
+    .next {
+        margin-bottom: 60px;
+        margin-top: 43px;
+        justify-content: flex-end;
+        
+        .btn {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80px;
+            height: 40px;
+            border: 2px solid $primaryColor;
+            background-color: #FFF;
+            color: $primaryColor;
+            cursor: pointer;
+            // mudar bg-color com base na validacao do form
+        }
+        img {
+            display: none; // mudar display com js com base na validacao do form
+        }
+    }
 
-li{
-    
-    box-shadow: inset 0px -2px 0px $inputColor;
-}
-
-
-
-.second-tab-btn{
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-button{
-    background: #ffffff;
-    color: $primaryColor;
-    border-color: $primaryColor;
-    padding: 0px 12px 0px 12px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    
-}
-img{
-    display: none;
-}
-
-
-button:hover{
-    background: $primaryColor;
-    color: #ffffff;
-    justify-content: space-between;
-    
-    
 }
