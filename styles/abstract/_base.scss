@@ -21,6 +21,7 @@ input {
   box-sizing: border-box;
   padding: 11px 0 11px 12px;
   width: 510px;
+  border-radius: 4px;
 }
 
 .btnActive {
@@ -29,7 +30,7 @@ input {
 }
 
 .btn {
-  padding: 0px 12px 0px 12px;
+  padding: 11px 12px;
   background-color: $primaryColor;
   border-radius: 4px;
   font-family: 'Nunito', sans-serif;
@@ -43,7 +44,7 @@ input {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 617px;
   margin: 0 auto;
 
   &::after,

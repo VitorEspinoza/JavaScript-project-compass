@@ -78,6 +78,7 @@ input {
           box-sizing: border-box;
   padding: 11px 0 11px 12px;
   width: 510px;
+  border-radius: 4px;
 }
 
 .btnActive {
@@ -86,7 +87,7 @@ input {
 }
 
 .btn {
-  padding: 0px 12px 0px 12px;
+  padding: 11px 12px;
   background-color: #074EE8;
   border-radius: 4px;
   font-family: 'Nunito', sans-serif;
@@ -100,7 +101,7 @@ input {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 617px;
   margin: 0 auto;
 }
 
@@ -141,12 +142,17 @@ input {
           box-shadow: inset 0px -2px 0px #AAAAAA;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .tab label {
   font-family: "Nunito", sans-serif;
   font-size: 14px;
   color: #767676;
+}
+
+.tab input {
+  margin-top: 4px;
 }
 
 .tab input::-webkit-input-placeholder {
@@ -173,23 +179,108 @@ input {
   color: #767676;
 }
 
-.birthday input {
-  width: 100px;
+.tab .name {
+  margin-bottom: 28px;
 }
 
-.check {
-  width: auto;
+.tab .nickname {
+  margin-bottom: 20px;
 }
 
-.info-flex {
+.tab .check {
+  gap: 8px;
+}
+
+.tab .check p {
+  margin: auto 0;
+}
+
+.tab .check input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.tab .info-flex {
   gap: 25px;
+  margin-bottom: 28px;
 }
 
-.info-flex input[type=email] {
+.tab .info-flex input[type=email] {
   width: 330px;
 }
 
-.info-flex input[type=text] {
+.tab .info-flex input[type=text] {
   width: 155px;
+}
+
+.tab .birthday {
+  margin-bottom: 45px;
+}
+
+.tab .birthday h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  color: #767676;
+  margin-bottom: 14px;
+}
+
+.tab .birthday .selects {
+  gap: 22px;
+}
+
+.tab .birthday .select {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tab .birthday select {
+  margin-top: 4px;
+  outline: none;
+  width: 115px;
+  height: 40px;
+  border: 2px solid #AAA;
+  background-color: #FFF;
+  border-radius: 4px;
+}
+
+.tab .birthday input {
+  width: 100px;
+  height: 40px;
+}
+
+.tab form {
+  max-width: 515px;
+}
+
+.tab .next {
+  margin-bottom: 60px;
+  margin-top: 43px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.tab .next .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 40px;
+  border: 2px solid #074EE8;
+  background-color: #FFF;
+  color: #074EE8;
+  cursor: pointer;
+}
+
+.tab .next img {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
