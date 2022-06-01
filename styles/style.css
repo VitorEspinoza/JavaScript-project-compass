@@ -65,8 +65,9 @@ img {
       flex-wrap: wrap;
 }
 
-.input {
-  font-family: 'Nunito', sans-serif;
+input {
+  display: block;
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -75,6 +76,8 @@ img {
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 11px 0 11px 12px;
+  width: 510px;
 }
 
 .btnActive {
@@ -94,5 +97,99 @@ img {
   border: none;
   outline: none;
   text-decoration: none;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container::after, .container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.active {
+  color: #074EE8;
+  -webkit-box-shadow: inset 0px -3px 0px #074EE8 !important;
+          box-shadow: inset 0px -3px 0px #074EE8 !important;
+}
+
+.tab h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-top: 55px;
+  margin-bottom: 35px;
+}
+
+.tab > div {
+  margin-left: 45px;
+}
+
+.tab ul {
+  margin-bottom: 35px;
+}
+
+.tab ul li {
+  text-align: center;
+  padding: 13px 0;
+  width: 170px;
+  -webkit-box-shadow: inset 0px -2px 0px #AAAAAA;
+          box-shadow: inset 0px -2px 0px #AAAAAA;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+}
+
+.tab label {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  color: #767676;
+}
+
+.tab input::-webkit-input-placeholder {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #767676;
+}
+
+.tab input:-ms-input-placeholder {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #767676;
+}
+
+.tab input::-ms-input-placeholder {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #767676;
+}
+
+.tab input::placeholder {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #767676;
+}
+
+.birthday input {
+  width: 100px;
+}
+
+.check {
+  width: auto;
+}
+
+.info-flex {
+  gap: 25px;
+}
+
+.info-flex input[type=email] {
+  width: 330px;
+}
+
+.info-flex input[type=text] {
+  width: 155px;
 }
 /*# sourceMappingURL=style.css.map */

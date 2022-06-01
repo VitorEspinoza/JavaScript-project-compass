@@ -8,8 +8,67 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+  <section class="first-tab tab container">
+    <div>
+  <h1 >Team Sign Up</h1>
+  <ul class="flex">
+    <li class="active">Basic</li>
+    <li>Social</li>
+    <li>Certificates</li>
+  </ul>
 
+  <form action="">
+    <div>
+      <label for="Name">Full Name</label>
+      <input type="text" name="Name" id="" placeholder="Foo Bar" required>
+    </div>
+    <div>
+      <label for="Nickname">Nickname</label>
+      <input type="text" name="Nickname" id="" placeholder="Juanito">
+    </div>
+
+    <div class="flex info-flex">
+      <div>
+        <label for="Email">Email *</label>
+        <input type="email" name="Email" id="" placeholder="foo@bar.com">
+      </div>
+      <div>
+        <label for="Phone">Phone</label>
+        <input placeholder="(83) 00000-0000" type="text" name="Phone" id="">
+      </div>
+    </div>
+      <div class="birthday">
+      <h2>Birthday *</h2>
+      <div class="flex">
+       <div>
+         <label for="Day">Day</label>
+         <select name="Day" class="select-day"></select>
+       </div>
+       <div>
+        <label for="Month">Month</label>
+        <select name="Month" class="select-month"></select>
+       </div>
+       <div>
+        <label for="Year">Year</label>
+        <select class="select-year"></select>
+       </div>
+       <div>
+         <label for="Age">Age</label>
+         <input readonly="true">
+       </div>
+      </div>
+    </div>
+    <div class="flex">
+      <input class="check" type="checkbox">
+      <p>I accept the term and privacy</p>
+    </div>
+    
+    <button class="btn">Next <img src="./assets/vetor-setinha.svg" alt=""></button>
+  </form>
+</div>
+</section>
 </body>
 </html>

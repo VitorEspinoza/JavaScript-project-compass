@@ -10,25 +10,27 @@ img {
   flex-wrap: wrap;
 }
 
-.input {
-  font-family: 'Nunito', sans-serif;
-  font-size: 16px;
+input {
+  display: block;
+  @include font(16px, $nunito);
   font-weight: 400;
   line-height: 18px;
-  color: #767676;
+  color: $inputColor;
   border: 2px solid #AAA;
   outline: none;
   box-sizing: border-box;
+  padding: 11px 0 11px 12px;
+  width: 510px;
 }
 
 .btnActive {
   background-color: #FFF;
-  border: 2px solid #074EE8;
+  border: 2px solid $primaryColor;
 }
 
 .btn {
   padding: 0px 12px 0px 12px;
-  background-color: #074EE8;
+  background-color: $primaryColor;
   border-radius: 4px;
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
@@ -38,4 +40,21 @@ img {
   border: none;
   outline: none;
   text-decoration: none;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+
+  &::after,
+  &::before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.active {
+  color: $primaryColor;
+  box-shadow: inset 0px -3px 0px $primaryColor !important;
 }

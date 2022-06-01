@@ -1,0 +1,58 @@
+.tab {
+    h1 {
+        @include font(18px, $inter);
+        line-height: 24px;
+        font-weight: 600;
+        margin-top: 55px;
+        margin-bottom: 35px;
+    }
+
+    & > div {
+        margin-left: 45px;
+    }
+
+   
+    ul 
+    {
+        margin-bottom: 35px;
+        li {
+            text-align: center;
+            padding: 13px 0;
+            width: 170px;
+            box-shadow: inset 0px -2px 0px #AAAAAA;
+            @include font(16px, $nunito);
+        }
+    }    
+
+    label {
+        @include font(14px, $nunito);
+        color: $inputColor;
+    }
+
+    input::placeholder {
+        @include font(16px, $nunito);
+        color: $inputColor;
+    }
+}
+
+.birthday {
+    input {
+        width: 100px;
+    }
+}
+
+.check {
+    width: auto;
+}
+
+.info-flex {
+    gap: 25px;
+
+    input[type=email] {
+    width: 330px;
+    }
+  
+    input[type=text] {
+        width: 155px;
+    }
+}
