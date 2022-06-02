@@ -6,9 +6,10 @@
         margin-top: 55px;
         margin-bottom: 35px;
     }
-
+  
     & > div {
-        margin-left: 45px;
+        display: table;
+        margin: 0 auto;
     }
 
     ul 

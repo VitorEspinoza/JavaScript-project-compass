@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
+<body onload="AddOption()">
   <section class="first-tab tab container">
     <div>
       <h1>Team Sign Up</h1>
@@ -47,19 +47,25 @@
           <div class="flex selects">
             <div class="flex select">
               <label for="Day">Day</label>
-              <select name="Day" class="select-day"></select>
+              <select name="Day" class="select-day" >
+                <option>  </option>
+              </select>
             </div>
             <div class="flex select">
               <label for="Month">Month</label>
-              <select name="Month" class="select-month"></select>
+              <select name="Month" class="select-month" onchange="AddOptionDayBasedFields()"> 
+                <option>  </option>
+              </select>
             </div>
             <div class="flex select">
               <label for="Year">Year</label>
-              <select class="select-year"></select>
+              <select name="Year" class="select-year" onchange="AddOptionDayBasedFields()" >
+                <option>  </option>
+              </select>
             </div>
             <div class="flex select">
               <label for="Age">Age</label>
-              <input readonly="true" placeholder="18">
+              <input name="Age" readonly="true" placeholder="18">
             </div>
           </div>
         </div>
@@ -76,6 +82,7 @@
       </form>
     </div>
   </section>
+  <script src="js/select-options.js"></script>
 </body>
 
 </html>
