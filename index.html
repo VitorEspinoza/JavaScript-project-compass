@@ -8,8 +8,55 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-  
+<body>  
+  <section class="thirdTab flex">
+    <h1>Team Sign Up</h1>
+    
+    <ul class="flex">
+      <li>Basic</li>
+      <li>Social</li>
+      <li class="active">Certificates</li>
+    </ul>
+
+    <form class="flex">
+      <fieldset id="certificates">
+        <label for="certificates">Certificates</label>
+        <input type="text" name="certificates" id="certificates" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+        <span></span> 
+        <img id="heartIcon" src="img/heart.svg">
+        <button class="flex btn btnActive">
+          <img src="img/moreIcon.svg">    
+          <p>More</p>
+          <img src="img/arrowIcon.svg">
+        </button>
+      </fieldset> 
+
+      <fieldset id="teamName">
+        <label for="teamName">Team Name *</label>
+        <input type="text" name="teamName" id="teamName" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" required>
+        <span></span> 
+      </fieldset>
+
+      <fieldset id="institution">   
+        <label for="institution">Institution *</label>    
+        <input type="text" name="institution" id="institution" placeholder="Universidade Federal da Paraíba" required pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$">
+        <span></span> 
+      </fieldset>
+
+      <fieldset id="graduation">
+        <label for="graduation">Graduation</label>
+        <input type="text" name="graduation" id="graduation" placeholder="Ciências da Computação" required>
+        <span></span> 
+      </fieldset>
+
+      <button class=" flex btn btnFinish">
+        <img src="img/okIcon.svg">
+        <p>Finish</p>
+      </button>
+    </form>
+  </section>
+  <script src="js/thirdTabValidation.js"></script>
 </body>
 </html>

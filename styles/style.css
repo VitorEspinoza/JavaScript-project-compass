@@ -65,16 +65,45 @@ img {
       flex-wrap: wrap;
 }
 
-.input {
+input {
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   color: #767676;
   border: 2px solid #AAA;
+  border-radius: 4px;
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  max-width: 515px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+input::-webkit-input-placeholder {
+  padding-left: 12px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+input:-ms-input-placeholder {
+  padding-left: 12px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+input::-ms-input-placeholder {
+  padding-left: 12px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+input::placeholder {
+  padding-left: 12px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .btnActive {
@@ -83,7 +112,7 @@ img {
 }
 
 .btn {
-  padding: 0px 12px 0px 12px;
+  padding: 15px 12px 15px 12px;
   background-color: #074EE8;
   border-radius: 4px;
   font-family: 'Nunito', sans-serif;
@@ -94,5 +123,120 @@ img {
   border: none;
   outline: none;
   text-decoration: none;
+}
+
+.active {
+  color: #074EE8;
+  -webkit-box-shadow: inset 0px -3px 0px #074EE8 !important;
+          box-shadow: inset 0px -3px 0px #074EE8 !important;
+}
+
+.thirdTab {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  margin: 0 auto;
+  padding-left: 67px;
+  padding-right: 35px;
+  max-width: 515px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+.thirdTab h1 {
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 33px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.thirdTab ul {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 37px;
+  color: #111111;
+}
+
+.thirdTab ul li {
+  -webkit-box-shadow: inset 0px -2px 0px #AAAAAA;
+          box-shadow: inset 0px -2px 0px #AAAAAA;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  padding: 15px 0;
+  width: 171.67px;
+}
+
+.thirdTab #certificates {
+  position: relative;
+}
+
+.thirdTab #certificates input {
+  margin-bottom: 18px;
+}
+
+.thirdTab #certificates #heartIcon {
+  position: absolute;
+  width: 15.68px;
+  right: 13.16px;
+  top: 33.25px;
+}
+
+.thirdTab form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #767676;
+}
+
+.thirdTab form label {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.thirdTab form input {
+  margin-bottom: 33px;
+  max-width: 515px;
+  height: 40px;
+}
+
+.thirdTab fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.thirdTab button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 48px;
+  width: 109px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 11px;
+  padding-top: 11px;
+}
+
+.thirdTab .btnFinish {
+  width: 91px;
+  line-height: 18px;
+  margin-top: 24px;
 }
 /*# sourceMappingURL=style.css.map */
