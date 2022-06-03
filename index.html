@@ -47,25 +47,25 @@
           <div class="flex selects">
             <div class="flex select">
               <label for="Day">Day</label>
-              <select name="Day" class="select-day" >
+              <select name="Day" class="select-day" onchange="CalculateAge()">
                 <option>  </option>
               </select>
             </div>
             <div class="flex select">
               <label for="Month">Month</label>
-              <select name="Month" class="select-month" onchange="AddOptionDayBasedFields()"> 
+              <select name="Month" class="select-month" onchange="(AddOptionDayBasedFields(), CalculateAge());"> 
                 <option>  </option>
               </select>
             </div>
             <div class="flex select">
               <label for="Year">Year</label>
-              <select name="Year" class="select-year" onchange="AddOptionDayBasedFields()" >
+              <select name="Year" class="select-year" onchange="(AddOptionDayBasedFields(), CalculateAge());" >
                 <option>  </option>
               </select>
             </div>
             <div class="flex select">
               <label for="Age">Age</label>
-              <input name="Age" readonly="true" placeholder="18">
+              <input name="Age" readonly="true" placeholder="18" id="inputAge">
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@
       </form>
     </div>
   </section>
-  <script src="js/select-options.js"></script>
+  <script src="js/LoadBirthdayFields.js"></script>
 </body>
 
 </html>
