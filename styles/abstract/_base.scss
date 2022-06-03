@@ -11,28 +11,29 @@ img {
 }
 
 input {
-  font-family: 'Nunito', sans-serif;
-  font-size: 16px;
+  display: block;
+  @include font(16px, $nunito);
   font-weight: 400;
   line-height: 18px;
-  color: #767676;
+  color: $inputColor;
   border: 2px solid #AAA;
-  border-radius: 4px;
   outline: none;
   box-sizing: border-box;
-  max-width: 515px;
-  display: flex;
+  padding: 11px 0 11px 12px;
+  width: 510px;
+  border-radius: 4px;
+  padding-left: 12px;
 }
 
 input::placeholder {
-  padding-left: 12px;
   font-weight: 400;
   font-size: 16px;
 }
 
 .btnActive {
-  background-color: #FFF;
-  border: 2px solid #074EE8;
+  background-color: #FFF !important;
+  color: $primaryColor !important;
+  border: 2px solid $primaryColor !important;
 }
 
 .btn {
@@ -47,6 +48,18 @@ input::placeholder {
   border: none;
   outline: none;
   text-decoration: none;
+}
+
+.container {
+  max-width: 617px;
+  margin: 0 auto;
+
+  &::after,
+  &::before {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 .active {

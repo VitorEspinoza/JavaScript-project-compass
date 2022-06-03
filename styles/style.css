@@ -66,49 +66,46 @@ img {
 }
 
 input {
-  font-family: 'Nunito', sans-serif;
+  display: block;
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   color: #767676;
   border: 2px solid #AAA;
-  border-radius: 4px;
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 515px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 11px 0 11px 12px;
+  width: 510px;
+  border-radius: 4px;
+  padding-left: 12px;
 }
 
 input::-webkit-input-placeholder {
-  padding-left: 12px;
   font-weight: 400;
   font-size: 16px;
 }
 
 input:-ms-input-placeholder {
-  padding-left: 12px;
   font-weight: 400;
   font-size: 16px;
 }
 
 input::-ms-input-placeholder {
-  padding-left: 12px;
   font-weight: 400;
   font-size: 16px;
 }
 
 input::placeholder {
-  padding-left: 12px;
   font-weight: 400;
   font-size: 16px;
 }
 
 .btnActive {
-  background-color: #FFF;
-  border: 2px solid #074EE8;
+  background-color: #FFF !important;
+  color: #074EE8 !important;
+  border: 2px solid #074EE8 !important;
 }
 
 .btn {
@@ -123,6 +120,17 @@ input::placeholder {
   border: none;
   outline: none;
   text-decoration: none;
+}
+
+.container {
+  max-width: 617px;
+  margin: 0 auto;
+}
+
+.container::after, .container::before {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .active {
@@ -167,6 +175,7 @@ input::placeholder {
           justify-content: center;
   margin-bottom: 37px;
   color: #111111;
+  cursor: pointer;
 }
 
 .thirdTab ul li {
@@ -191,7 +200,7 @@ input::placeholder {
   position: absolute;
   width: 15.68px;
   right: 13.16px;
-  top: 33.25px;
+  top: 32px;
 }
 
 .thirdTab form {
@@ -238,5 +247,14 @@ input::placeholder {
   width: 91px;
   line-height: 18px;
   margin-top: 24px;
+}
+
+.thirdTab .btnFinish img {
+  display: none;
+}
+
+.thirdTab .errorMsg {
+  color: red;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */

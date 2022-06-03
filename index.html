@@ -20,43 +20,45 @@
       <li class="active">Certificates</li>
     </ul>
 
-    <form class="flex">
+    <form class="flex" onchange="formValidation()">
+      <span id="certificateError" class="errorMsg"></span>
       <fieldset id="certificates">
         <label for="certificates">Certificates</label>
         <input type="text" name="certificates" id="certificates" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-        <span></span> 
-        <img id="heartIcon" src="img/heart.svg">
-        <button class="flex btn btnActive">
-          <img src="img/moreIcon.svg">    
+        <span></span>
+        <img id="heartIcon" src="assets/heart.svg">
+        <button class="flex btn">
+          <img src="assets/moreIcon.svg">    
           <p>More</p>
-          <img src="img/arrowIcon.svg">
+          <img src="assets/arrowIcon.svg">
         </button>
       </fieldset> 
-
+      
       <fieldset id="teamName">
+        <span id="nameError" class="errorMsg"></span>
         <label for="teamName">Team Name *</label>
         <input type="text" name="teamName" id="teamName" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" required>
-        <span></span> 
       </fieldset>
 
-      <fieldset id="institution">   
+      <fieldset id="institution">  
+        <span id="institutionError" class="errorMsg"></span> 
         <label for="institution">Institution *</label>    
         <input type="text" name="institution" id="institution" placeholder="Universidade Federal da Paraíba" required pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$">
-        <span></span> 
       </fieldset>
 
       <fieldset id="graduation">
+        <span id="graduationError" class="errorMsg"></span>
         <label for="graduation">Graduation</label>
         <input type="text" name="graduation" id="graduation" placeholder="Ciências da Computação" required>
-        <span></span> 
       </fieldset>
 
-      <button class=" flex btn btnFinish">
-        <img src="img/okIcon.svg">
+      <button class="flex btn btnFinish" id="submitBtn">
+        <img src="assets/okIcon.svg" id="arrow">
         <p>Finish</p>
       </button>
     </form>
   </section>
   <script src="js/thirdTabValidation.js"></script>
+  <script src="js/favourite.js"></script>
 </body>
 </html>

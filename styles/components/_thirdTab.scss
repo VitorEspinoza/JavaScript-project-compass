@@ -25,6 +25,7 @@
         justify-content: center;
         margin-bottom: 37px;
         color: $textColor;
+        cursor: pointer;
 
         li {
             box-shadow: inset 0px -2px 0px #AAAAAA;
@@ -47,7 +48,7 @@
             position: absolute;
             width: 15.68px;
             right: 13.16px;
-            top: 33.25px;
+            top: 32px;
         }
 
     }
@@ -86,6 +87,14 @@
         width: 91px;
         line-height: 18px;
         margin-top: 24px;
+        img {
+            display: none;
+        }
+    }
+
+    .errorMsg {
+        color: red;
+        font-size: 14px;
     }
 }
 
