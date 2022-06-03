@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 </head>
 
 <body onload="AddOption()">
@@ -39,7 +41,7 @@
           </div>
           <div>
             <label for="Phone">Phone</label>
-            <input placeholder="(83) 00000-0000" type="text" name="Phone" id="">
+            <input placeholder="(83) 00000-0000" type="text" name="Phone" id="telephone">
           </div>
         </div>
         <div class="birthday">
@@ -84,6 +86,8 @@
     </div>
   </section>
   <script src="js/LoadBirthdayFields.js"></script>
+  <script src="js/EmailValidation.js"></script>
+  <script src="js/rimelPhone.js"></script>
 </body>
 
 </html>
