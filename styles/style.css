@@ -193,7 +193,7 @@ input {
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
   .tab ul li {
-    width: 300px;
+    width: 400px;
   }
 }
 

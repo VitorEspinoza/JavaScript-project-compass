@@ -20,11 +20,10 @@
             flex-direction: row;
             align-content: none;
         }
-
         margin-bottom: 35px;
         li {
             @include responsive (mobileL){
-                width: 300px;
+                width: 400px;
             }
             @include responsive (mobileS){
                 width: 300px;
@@ -117,7 +116,7 @@
     }
     
     form {
-        max-width: 515px;   
+        max-width: 515px;      
     }
 
     .select-month {
