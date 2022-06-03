@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>  
-  <section class="thirdTab flex">
+  <section class="thirdTab flex tab">
     <h1>Team Sign Up</h1>
     
     <ul class="flex">
@@ -20,43 +20,46 @@
       <li class="active">Certificates</li>
     </ul>
 
-    <form id="formThirdTab" class="flex">
-      <fieldset id="certificates">
+    <form class="flex">
+      <fieldset id="certificates">      
         <label for="certificates">Certificates</label>
-        <span class="errorMessageStyle"></span> 
-        <input type="text" name="certificates" id="certificates" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-        <img id="heartIcon" src="img/heart.svg">
-        <button class="flex btn btnActive">
-          <img src="img/moreIcon.svg">    
-          <p>More</p>
-          <img src="img/arrowIcon.svg">
-        </button>
+        <span class="errorMessageStyle"></span>    
+        <input type="text" name="certificates" id="input-new-certificate" class="certificate-input input-url" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+        <img class="heart-icon" src="img/heart.svg">
       </fieldset> 
-
-      <fieldset id="teamName">
+      <button class="flex btn btn-certificate btn-post">
+        <img src="img/moreIcon.svg" class="btn-img">    
+        <p>More</p>
+        <img src="img/arrowIcon.svg" class="btn-img">
+      </button>
+    </form>
+    <form class="flex">
+      <fieldset >
         <label for="teamName">Team Name *</label>
         <span class="errorMessageStyle"></span> 
-        <input type="text" name="teamName" id="teamName" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" required>
+        <input class="input-url" type="text" name="teamName" id="teamName" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
       </fieldset>
 
-      <fieldset id="institution">   
+      <fieldset>   
         <label for="institution">Institution *</label>    
         <span class="errorMessageStyle"></span> 
-        <input type="text" name="institution" id="institution" placeholder="Universidade Federal da Paraíba" minlength="2" required>
+        <input class="input-name" type="text" name="institution" id="institution" placeholder="Universidade Federal da Paraíba" minlength="2">
       </fieldset>
 
-      <fieldset id="graduation">
+      <fieldset>
         <label for="graduation">Graduation *</label>
         <span class="errorMessageStyle"></span> 
-        <input type="text" name="graduation" id="graduation" placeholder="Ciências da Computação" minlength="2" required>
+        <input class="input-name" type="text" name="graduation" id="graduation" placeholder="Ciências da Computação" minlength="2">
       </fieldset>
 
-      <button class=" flex btn btnFinish">
-        <img src="img/okIcon.svg">
+      <button class=" flex btn btnFinish btn-post">
+        <img src="img/okIcon.svg" class="btn-img">
         <p>Finish</p>
       </button>
     </form>
   </section>
-  <script src="js/thirdTabValidation.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/addCertificates.js"></script>
+  <script src="js/saveInfos.js"></script>
 </body>
 </html>

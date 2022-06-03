@@ -37,22 +37,22 @@ function errorCheck(validation, errorField, textError) {
     errorCheck(graduationOk, graduationError, "Erro! Insira corretamente.");
 }) */
 
-certificate.addEventListener("change", e => {
+certificate.addEventListener("input", e => {
     let certificateOk = validateWebSite.test(certificate.value); 
     errorCheck(certificateOk, certificateError, "Erro! Insira corretamente.");
 })
 
-teamName.addEventListener("change", e => {
+teamName.addEventListener("input", e => {
     let teamNameOk = validateWebSite.test(teamName.value); 
     errorCheck(teamNameOk, teamNameError, "Erro! Insira corretamente.");
 })
 
-institution.addEventListener("change", e => {
+institution.addEventListener("input", e => {
     let institutionOk = validateNames.test(institution.value);
     errorCheck(institutionOk, institutionError, "Erro! Insira corretamente.");
 })
 
-graduation.addEventListener("change", e => {
+graduation.addEventListener("input", e => {
     let graduationOk = validateNames.test(graduation.value);
     errorCheck(graduationOk, graduationError, "Erro! Insira corretamente.");
 })
