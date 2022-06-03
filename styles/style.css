@@ -213,6 +213,18 @@ input {
   margin-top: 4px;
 }
 
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .tab input {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 424px) {
+  .tab input {
+    width: 300px;
+  }
+}
+
 .tab input::-webkit-input-placeholder {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
@@ -270,7 +282,13 @@ input {
 
 @media only screen and (max-width: 424px) {
   .tab .info-flex input[type=email] {
-    width: 280px;
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .tab .info-flex input[type=email] {
+    width: 400px;
   }
 }
 

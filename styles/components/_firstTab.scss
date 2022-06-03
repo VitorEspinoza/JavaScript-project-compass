@@ -40,10 +40,17 @@
     label {
         @include font(14px, $nunito);
         color: $inputColor;
+      
     }
 
     input {
         margin-top: 4px;
+        @include responsive (mobileL){
+            width: 400px;
+        }
+        @include responsive (mobileS) {
+            width: 300px;
+        }
     }
 
     input::placeholder {
@@ -78,7 +85,10 @@
         input[type=email] {
         width: 330px;
         @include responsive (mobileS) {
-            width: 280px;
+            width: 300px;
+        }
+        @include responsive (mobileL){
+            width: 400px;
         }
         }
       
