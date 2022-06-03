@@ -23,24 +23,27 @@
           <li>Certificates</li>
         </ul>
       </div>
-        <form action="">
+        <form action="" id="social" onchange="formValidation()">
+          <label id="linkedinError"></label>
           <div class="linkedin">
             <label for="LinkedIn">LinkedIn</label>
-            <input type="text" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" name="LinkedIn">
+            <input type="text" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" required name="LinkedIn" id="linkedin">
           </div>
+          <label id="githubError"></label>
           <div class="github">
             <label for="Github">Github&#42;</label>
-            <input type="text" placeholder="https://github.com/foobar" required name="Github">
+            <input type="text" placeholder="https://github.com/foobar" required name="Github" id="github">
           </div>
           <div class="flex next">
             <button class="btn">
               Next
-              <img src="img/sinal-maior.svg" alt="Next&#62;">
+              <img src="assets/sinal-maior.svg" alt="Next&#62;" id="arrow">
             </button>
           </div>
         </form>
     </div> 
   </section>
+  <script src="/js/urlValidation.js"></script>
 </body>
 
 </html>

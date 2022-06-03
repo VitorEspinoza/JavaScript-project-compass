@@ -82,8 +82,8 @@ input {
 }
 
 .btnActive {
-  background-color: #FFF;
-  border: 2px solid #074EE8;
+  background-color: #074EE8 !important;
+  color: #FFF !important;
 }
 
 .btn {
@@ -219,5 +219,10 @@ input {
 
 .tab .next img {
   display: none;
+}
+
+.tab #linkedinError, .tab #githubError {
+  color: red;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
