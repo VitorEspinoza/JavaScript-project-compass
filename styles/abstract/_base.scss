@@ -22,15 +22,8 @@ input {
   padding: 11px 0 11px 12px;
   width: 510px;
   border-radius: 4px;
-
-@include responsive(mobileL){
-  width: 330px;
 }
 
-@include responsive(mobileS){
-  width: 280px;
-}
-}
 .btnActive {
   background-color: #FFF;
   border: 2px solid $primaryColor;
@@ -54,12 +47,6 @@ input {
   max-width: 617px;
   margin: 0 auto;
 
-  @include responsive(mobileL){
-    max-width: 400px;
-  }
-  @include responsive(mobileS){
-    max-width: 300px;
-  }
   &::after,
   &::before {
     content: "";

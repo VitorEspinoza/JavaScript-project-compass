@@ -5,7 +5,7 @@ $inputColor: #767676;
 $inter: 'Inter', sans-serif;
 $nunito: 'Nunito', sans-serif;
 
-$tablet: 680px;
+$tablet: 768px;
 $mobileL: 425px;
 $mobileS: 320px;
 
@@ -18,7 +18,7 @@ $mobileS: 320px;
     @media only screen and (min-width: #{$mobileL}) and (max-width: #{$tablet - 1}) {
       @content;
     }
-  } @else if $dispositive == mobileS {
+  } @else if $dispositivo == mobileS {
     @media only screen and (max-width: #{$mobileL - 1}) {
       @content;
     }
