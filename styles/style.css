@@ -138,7 +138,7 @@ input::placeholder {
           flex-direction: column;
   font-family: "Nunito", sans-serif;
   margin: 0 auto;
-  padding-left: 67px;
+  padding-left: 35px;
   padding-right: 35px;
   max-width: 515px;
   margin: 0 auto;
@@ -190,8 +190,9 @@ input::placeholder {
 .thirdTab #certificates #heartIcon {
   position: absolute;
   width: 15.68px;
+  height: 13.67px;
   right: 13.16px;
-  top: 33.25px;
+  bottom: 119.08px;
 }
 
 .thirdTab form {
@@ -208,9 +209,15 @@ input::placeholder {
 }
 
 .thirdTab form input {
-  margin-bottom: 33px;
   max-width: 515px;
   height: 40px;
+  margin-bottom: 33px;
+}
+
+.thirdTab form .errorMessageStyle {
+  font-size: 14px;
+  color: red;
+  margin: 6px 0;
 }
 
 .thirdTab fieldset {

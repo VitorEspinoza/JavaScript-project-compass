@@ -1,26 +1,63 @@
-let certificateInput = document.querySelector("#certificates input");
+// Input Fields
+let certificate = document.querySelector("#certificates input");
 let teamName = document.querySelector("#teamName input");
 let institution = document.querySelector('#institution input');
-let graduation = document.querySelector('#graduation input')
+let graduation = document.querySelector('#graduation input');
 
-// TESTES
-let teste = document.querySelector("#institution label");
-//
+// Error Fields
+let certificateError = document.querySelector("#certificates span");
+let teamNameError = document.querySelector("#teamName span");
+let institutionError = document.querySelector("#institution span");
+let graduationError = document.querySelector("#graduation span");
 
-let validateWebSite = new RegExp(/^((ftp|http|https):\/\/)?www\.([A-z]+)\.([A-z]{2,})/);
+// Form
+let formThirdTab = document.querySelector("#formThirdTab");
 
-let validateNames = new RegExp(/[A-Z][a-z] [A-Z][a-z]/);
+// Validation Regex
+let validateWebSite = new RegExp(/[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/);
+let validateNames = new RegExp(/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/);
 
+// Functions
+function errorCheck(validation, errorField, textError) {
+    validation == false ? errorField.textContent = textError : errorField.textContent = "";
+}
 
-let certificateOk = validateWebSite.test(certificateInput.value); 
-let teamNameOk = validateWebSite.test(teamName.value); 
+// Event
+/* formThirdTab.addEventListener("change", e => {
 
-let institutionOk = validateNames.test(institution.value);
+    // Input Validation
+    let certificateOk = validateWebSite.test(certificate.value); 
+    let teamNameOk = validateWebSite.test(teamName.value); 
+    let institutionOk = validateNames.test(institution.value);
+    let graduationOk = validateNames.test(graduation.value);
 
-teste.addEventListener('click', e => {
-    institution.value = (institution.value).trim(); /* remove espaços desnecessários no começo e no fim */
-    console.log(institutionOk);
-    console.log(institution.value);
+    errorCheck(certificateOk, certificateError, "Erro! Insira corretamente.");
+    errorCheck(teamNameOk, teamNameError, "Erro! Insira corretamente.");
+    errorCheck(institutionOk, institutionError, "Erro! Insira corretamente.");
+    errorCheck(graduationOk, graduationError, "Erro! Insira corretamente.");
+}) */
+
+certificate.addEventListener("change", e => {
+    let certificateOk = validateWebSite.test(certificate.value); 
+    errorCheck(certificateOk, certificateError, "Erro! Insira corretamente.");
 })
+
+teamName.addEventListener("change", e => {
+    let teamNameOk = validateWebSite.test(teamName.value); 
+    errorCheck(teamNameOk, teamNameError, "Erro! Insira corretamente.");
+})
+
+institution.addEventListener("change", e => {
+    let institutionOk = validateNames.test(institution.value);
+    errorCheck(institutionOk, institutionError, "Erro! Insira corretamente.");
+})
+
+graduation.addEventListener("change", e => {
+    let graduationOk = validateNames.test(graduation.value);
+    errorCheck(graduationOk, graduationError, "Erro! Insira corretamente.");
+})
+
+
+
 
 

@@ -20,11 +20,11 @@
       <li class="active">Certificates</li>
     </ul>
 
-    <form class="flex">
+    <form id="formThirdTab" class="flex">
       <fieldset id="certificates">
         <label for="certificates">Certificates</label>
+        <span class="errorMessageStyle"></span> 
         <input type="text" name="certificates" id="certificates" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-        <span></span> 
         <img id="heartIcon" src="img/heart.svg">
         <button class="flex btn btnActive">
           <img src="img/moreIcon.svg">    
@@ -35,20 +35,20 @@
 
       <fieldset id="teamName">
         <label for="teamName">Team Name *</label>
+        <span class="errorMessageStyle"></span> 
         <input type="text" name="teamName" id="teamName" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" required>
-        <span></span> 
       </fieldset>
 
       <fieldset id="institution">   
         <label for="institution">Institution *</label>    
-        <input type="text" name="institution" id="institution" placeholder="Universidade Federal da Paraíba" required pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$">
-        <span></span> 
+        <span class="errorMessageStyle"></span> 
+        <input type="text" name="institution" id="institution" placeholder="Universidade Federal da Paraíba" minlength="2" required>
       </fieldset>
 
       <fieldset id="graduation">
-        <label for="graduation">Graduation</label>
-        <input type="text" name="graduation" id="graduation" placeholder="Ciências da Computação" required>
-        <span></span> 
+        <label for="graduation">Graduation *</label>
+        <span class="errorMessageStyle"></span> 
+        <input type="text" name="graduation" id="graduation" placeholder="Ciências da Computação" minlength="2" required>
       </fieldset>
 
       <button class=" flex btn btnFinish">
