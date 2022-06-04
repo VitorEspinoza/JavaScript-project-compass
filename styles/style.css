@@ -398,7 +398,7 @@ button {
   }
 }
 
-.tab .next {
+.tab .nextContainer {
   margin-bottom: 60px;
   margin-top: 43px;
   -webkit-box-pack: end;
@@ -406,7 +406,7 @@ button {
           justify-content: flex-end;
 }
 
-.tab .next .btn {
+.tab .nextContainer .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,7 +423,7 @@ button {
   cursor: pointer;
 }
 
-.tab .next img {
+.tab .nextContainer img {
   display: none;
 }
 
@@ -502,7 +502,7 @@ button {
   margin-bottom: 270px;
 }
 
-.tab .next {
+.tab .nextContainer {
   margin-bottom: 60px;
   margin-top: 43px;
   -webkit-box-pack: end;
@@ -510,7 +510,7 @@ button {
           justify-content: flex-end;
 }
 
-.tab .next .btn {
+.tab .nextContainer .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,7 +527,7 @@ button {
   cursor: pointer;
 }
 
-.tab .next img {
+.tab .nextContainer img {
   display: none;
 }
 
