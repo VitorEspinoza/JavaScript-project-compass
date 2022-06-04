@@ -69,9 +69,9 @@ function CalculateAge() {
     const monthBirthday = selectMonth.options[selectMonth.selectedIndex].text; 
     const yearBirthday = selectYear.options[selectYear.selectedIndex].text;
 
-    actualYear = new Date().getFullYear();
-    actualMonth = new Date().getMonth();
-    actualDay = new Date().getDate();
+    let actualYear = new Date().getFullYear();
+    let actualMonth = new Date().getMonth();
+    let actualDay = new Date().getDate();
     
     var diferenceYears = actualYear - yearBirthday;
 

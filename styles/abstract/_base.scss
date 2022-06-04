@@ -17,35 +17,46 @@ input {
   line-height: 18px;
   color: $inputColor;
   border: 2px solid #AAA;
+  border-radius: 4px;
   outline: none;
   box-sizing: border-box;
-  padding: 11px 0 11px 12px;
-  width: 510px;
+  width: 515px;
   border-radius: 4px;
+  padding: 11px 0 11px 12px;
 
 @include responsive(mobileL){
   width: 330px;
+  max-width: 515px;
+  display: flex;
+  padding-left: 12px;
+}
+
+&::placeholder {
+  font-weight: 400;
+  font-size: 16px;
 }
 
 @include responsive(mobileS){
   width: 280px;
 }
 }
+
 .btnActive {
-  background-color: $primaryColor !important;
+  background-color: $primaryColor!important;
+  border: none;
   color: #FFF !important;
 }
 
 .btn {
   padding: 11px 12px;
-  background-color: $primaryColor;
   border-radius: 4px;
-  font-family: 'Nunito', sans-serif;
+  background-color: #FFF;
+  @include font(16px, $nunito);
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  color: #FFF;
-  border: none;
+  color: $primaryColor;
+  border: 2px solid $primaryColor !important;
   outline: none;
   text-decoration: none;
 }
@@ -75,4 +86,8 @@ input {
 
 .invisible {
   display: none;
+}
+
+button {
+  cursor: pointer;
 }

@@ -73,18 +73,44 @@ input {
   line-height: 18px;
   color: #767676;
   border: 2px solid #AAA;
+  border-radius: 4px;
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 11px 0 11px 12px;
-  width: 510px;
+  width: 515px;
   border-radius: 4px;
+  padding: 11px 0 11px 12px;
 }
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
   input {
     width: 330px;
+    max-width: 515px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 12px;
   }
+}
+
+input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 424px) {
@@ -95,19 +121,21 @@ input {
 
 .btnActive {
   background-color: #074EE8 !important;
+  border: none;
   color: #FFF !important;
 }
 
 .btn {
   padding: 11px 12px;
-  background-color: #074EE8;
   border-radius: 4px;
-  font-family: 'Nunito', sans-serif;
+  background-color: #FFF;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  color: #FFF;
-  border: none;
+  color: #074EE8;
+  border: 2px solid #074EE8 !important;
   outline: none;
   text-decoration: none;
 }
@@ -143,6 +171,10 @@ input {
 
 .invisible {
   display: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 .tab h1 {
@@ -498,5 +530,123 @@ input {
 .tab #linkedinError, .tab #githubError {
   color: red;
   margin-bottom: 20px;
+}
+
+.thirdTab {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  margin: 0 auto;
+  padding-left: 35px;
+  padding-right: 35px;
+  max-width: 515px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+.thirdTab h1 {
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 33px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.thirdTab ul {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 37px;
+  color: #111111;
+}
+
+.thirdTab ul li {
+  -webkit-box-shadow: inset 0px -2px 0px #AAAAAA;
+          box-shadow: inset 0px -2px 0px #AAAAAA;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  padding: 15px 0;
+  width: 171.67px;
+}
+
+.thirdTab #certificates .certificateContainer {
+  position: relative;
+}
+
+.thirdTab #certificates input {
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.thirdTab #certificates .heart-icon {
+  position: absolute;
+  width: 15.68px;
+  height: 13.67px;
+  right: 13.16px;
+  bottom: 30.5px;
+  cursor: pointer;
+}
+
+.thirdTab form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #767676;
+}
+
+.thirdTab form label {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.thirdTab form input {
+  max-width: 515px;
+  height: 40px;
+  margin-bottom: 33px;
+}
+
+.thirdTab form .errorMessageStyle {
+  font-size: 14px;
+  color: red;
+  margin: 6px 0;
+}
+
+.thirdTab fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.thirdTab button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 48px;
+  width: 109px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 11px;
+  padding-top: 11px;
+}
+
+.thirdTab .btnFinish {
+  width: 91px;
+  line-height: 18px;
+  margin-top: 24px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,108 @@
+.thirdTab {
+    flex-direction: column;
+    font-family: $nunito;
+    margin: 0 auto;
+    padding-left: 35px;
+    padding-right: 35px;
+    max-width: 515px;
+    margin: 0 auto;
+    font-weight: 400;
+    @include font(16px, $inter);
+
+    h1 {
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 33px;
+        align-self: flex-start;
+        font-family: $inter;
+        @include font(18px, $inter);
+        font-weight: 600;
+        color: $textColor;
+    }
+
+    ul {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 37px;
+        color: $textColor;
+
+        li {
+            box-shadow: inset 0px -2px 0px #AAAAAA;
+            text-align: center;
+            @include font(16px, $nunito);
+            padding: 15px 0;
+            width: 171.67px;
+        }
+    }
+
+    #certificates {
+        
+        .certificateContainer {
+            position: relative;
+        }
+
+        input {
+            margin-bottom: 18px;
+            width: 100%;
+        }
+
+        .heart-icon {
+            position: absolute;
+            width: 15.68px;
+            height: 13.67px;
+            right: 13.16px;
+            bottom: 30.5px;
+            cursor: pointer;
+        }
+
+    }
+
+    form {
+        flex-direction: column;
+        color: $inputColor;
+
+        label {
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+
+        input {
+            max-width: 515px;
+            height: 40px;
+            margin-bottom: 33px;
+
+        }
+
+        .errorMessageStyle {
+            font-size: 14px;
+            color: red;
+            margin: 6px 0;
+
+        }
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        align-self: flex-end;
+        margin-bottom: 48px;
+        width: 109px;
+        justify-content: space-around;
+        padding-bottom: 11px;
+        padding-top: 11px;
+    }
+
+    .btnFinish {
+        width: 91px;
+        line-height: 18px;
+        margin-top: 24px;
+    }
+}
+
+
+
+
+

@@ -116,6 +116,58 @@
         </form>
     </div> 
   </section>
+
+  <section class="thirdTab flex tab">
+    <h1>Team Sign Up</h1>
+    
+    <ul class="flex">
+      <li>Basic</li>
+      <li>Social</li>
+      <li class="active">Certificates</li>
+    </ul>
+
+    <form class="flex">
+      <fieldset id="certificates">      
+        <label for="certificates">Certificates</label>
+        <span class="errorMessageStyle"></span>
+        <div class="certificateContainer">
+          <input type="text" name="certificates" id="input-new-certificate" class="certificate-input input-url" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+        </div>
+      </fieldset> 
+      <button class="flex btn btn-certificate btn-post">
+        <img src="img/moreIcon.svg" class="btn-img">    
+        <p>More</p>
+        <img src="img/arrowIcon.svg" class="btn-img">
+      </button>
+    </form>
+    <form class="flex">
+      <fieldset >
+        <label for="teamName">Team Name *</label>
+        <span class="errorMessageStyle"></span> 
+        <input class="input-url" type="text" name="teamName" id="teamName" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+      </fieldset>
+
+      <fieldset>   
+        <label for="institution">Institution *</label>    
+        <span class="errorMessageStyle"></span> 
+        <input class="input-name" type="text" name="institution" id="institution" placeholder="Universidade Federal da Paraíba" minlength="2">
+      </fieldset>
+
+      <fieldset>
+        <label for="graduation">Graduation *</label>
+        <span class="errorMessageStyle"></span> 
+        <input class="input-name" type="text" name="graduation" id="graduation" placeholder="Ciências da Computação" minlength="2">
+      </fieldset>
+
+      <button class=" flex btn btnFinish btn-post">
+        <img src="img/okIcon.svg" class="btn-img">
+        <p>Finish</p>
+      </button>
+    </form>
+  </section>
+  <script src="js/validation.js"></script>
+  <script src="js/addCertificates.js"></script>
+  <script src="js/saveInfos.js"></script>
   <script src="js/urlValidation.js"></script>
   <script src="js/LoadBirthdayFields.js"></script>
   <script src="js/EmailValidation.js"></script>
