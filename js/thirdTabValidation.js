@@ -20,23 +20,10 @@ let validateNames = new RegExp(/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/);
 // Functions
 function errorCheck(validation, errorField, textError) {
     validation == false ? errorField.textContent = textError : errorField.textContent = "";
+    validation == false ? errorField.classList.remove('invisible') : errorField.classList.add('invisible');
 }
 
-// Event
-/* formThirdTab.addEventListener("change", e => {
-
-    // Input Validation
-    let certificateOk = validateWebSite.test(certificate.value); 
-    let teamNameOk = validateWebSite.test(teamName.value); 
-    let institutionOk = validateNames.test(institution.value);
-    let graduationOk = validateNames.test(graduation.value);
-
-    errorCheck(certificateOk, certificateError, "Erro! Insira corretamente.");
-    errorCheck(teamNameOk, teamNameError, "Erro! Insira corretamente.");
-    errorCheck(institutionOk, institutionError, "Erro! Insira corretamente.");
-    errorCheck(graduationOk, graduationError, "Erro! Insira corretamente.");
-}) */
-
+// Events
 certificate.addEventListener("input", e => {
     let certificateOk = validateWebSite.test(certificate.value); 
     errorCheck(certificateOk, certificateError, "Erro! Insira corretamente.");

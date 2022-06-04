@@ -18,7 +18,7 @@
   <section class="first-tab tab container">
     <div>
       <h1>Team Sign Up</h1>
-      <ul class="flex">
+      <ul class="flex navMenu">
         <li class="active">Basic</li>
         <li>Social</li>
         <li>Certificates</li>
@@ -77,7 +77,7 @@
           <p>I accept the term and privacy</p>
         </div>
         <div class="flex next">
-          <button class="btn ">
+          <button class="btn next">
             Next 
             <img src="./assets/vetor-setinha.svg" alt="">
           </button>
@@ -86,11 +86,11 @@
     </div>
   </section>
 
-  <section class="second-tab tab container">
+  <section class="second-tab tab container invisible">
     <div>
       <div>
         <h1>Team Sign Up</h1>
-        <ul class="flex">
+        <ul class="flex navMenu">
           <li>Basic</li>
           <li class="active">Social</li>
           <li>Certificates</li>
@@ -108,7 +108,7 @@
             <input type="text" placeholder="https://github.com/foobar" required name="Github" id="github">
           </div>
           <div class="flex next">
-            <button class="btn">
+            <button class="btn next">
               Next
               <img src="assets/sinal-maior.svg" alt="Next&#62;" id="arrow">
             </button>
@@ -117,10 +117,10 @@
     </div> 
   </section>
 
-  <section class="thirdTab flex tab">
+  <section class="thirdTab flex tab invisible">
     <h1>Team Sign Up</h1>
     
-    <ul class="flex">
+    <ul class="flex navMenu">
       <li>Basic</li>
       <li>Social</li>
       <li class="active">Certificates</li>
@@ -129,7 +129,7 @@
     <form class="flex">
       <fieldset id="certificates">      
         <label for="certificates">Certificates</label>
-        <span class="errorMessageStyle"></span>
+        <span class="errorMessageStyle invisible"></span>
         <div class="certificateContainer">
           <input type="text" name="certificates" id="input-new-certificate" class="certificate-input input-url" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
         </div>
@@ -143,35 +143,40 @@
     <form class="flex">
       <fieldset >
         <label for="teamName">Team Name *</label>
-        <span class="errorMessageStyle"></span> 
+        <span class="errorMessageStyle invisible"></span> 
         <input class="input-url" type="text" name="teamName" id="teamName" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
       </fieldset>
 
       <fieldset>   
         <label for="institution">Institution *</label>    
-        <span class="errorMessageStyle"></span> 
+        <span class="errorMessageStyle invisible"></span> 
         <input class="input-name" type="text" name="institution" id="institution" placeholder="Universidade Federal da Paraíba" minlength="2">
       </fieldset>
 
       <fieldset>
         <label for="graduation">Graduation *</label>
-        <span class="errorMessageStyle"></span> 
+        <span class="errorMessageStyle invisible"></span> 
         <input class="input-name" type="text" name="graduation" id="graduation" placeholder="Ciências da Computação" minlength="2">
       </fieldset>
 
-      <button class=" flex btn btnFinish btn-post">
+      <button class="flex btn btnFinish btn-post next">
         <img src="img/okIcon.svg" class="btn-img">
         <p>Finish</p>
       </button>
     </form>
   </section>
+  <section class="viewTab invisible">
+    <h1>Teste</h1>
+  </section>
+
   <script src="js/validation.js"></script>
-  <script src="js/addCertificates.js"></script>
-  <script src="js/saveInfos.js"></script>
+  <script src="js/addCertificates.js"></script> 
+  <script src="js/saveInfos.js"></script> 
+  <script src="js/LoadBirthdayFields.js"></script> 
   <script src="js/urlValidation.js"></script>
-  <script src="js/LoadBirthdayFields.js"></script>
-  <script src="js/EmailValidation.js"></script>
+  <script src="js/EmailValidation.js"></script> 
   <script src="js/rimelPhone.js"></script>
+  <script src="js/tabsNavigate.js"></script>
 </body>
 
 </html>

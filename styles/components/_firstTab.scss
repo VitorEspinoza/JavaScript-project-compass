@@ -70,6 +70,9 @@
         gap: 8px;
         p {
             margin: auto 0;
+            @include font(16, $nunito);
+            line-height: 18px;
+            font-weight: 400;
         }
         input[type=checkbox] {
             width: 20px;

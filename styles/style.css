@@ -295,6 +295,10 @@ button {
 
 .tab .check p {
   margin: auto 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 16;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 .tab .check input[type=checkbox] {

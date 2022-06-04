@@ -40,7 +40,6 @@ btnAddCertificate.addEventListener('click', (event) => {
     
 });
 
-
 certificates.addEventListener('mousedown', () => {
     let favorites = document.querySelectorAll('.heart-icon');
 
