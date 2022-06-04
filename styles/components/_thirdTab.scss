@@ -36,11 +36,14 @@
     }
 
     #certificates {
-
-        position: relative;
+        
+        .certificateContainer {
+            position: relative;
+        }
 
         input {
             margin-bottom: 18px;
+            width: 100%;
         }
 
         .heart-icon {

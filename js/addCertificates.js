@@ -1,8 +1,10 @@
 const btnAddCertificate = document.querySelector('.btn-certificate');
 
+let certificates = document.getElementById('certificates');
+
 btnAddCertificate.addEventListener('click', (event) => {
     event.preventDefault();
-    var certificates = document.getElementById('certificates');
+    certificates = document.getElementById('certificates');
 
     let quantCertificate = certificates.querySelectorAll('.certificate-input')
     console.log
@@ -10,7 +12,10 @@ btnAddCertificate.addEventListener('click', (event) => {
     if (quantCertificate.length <  6 && constructorCertificate.value != "") {   
         let newInputCertificate = document.createElement('input');
         let newHeartIcon = document.createElement('img');
+        let newContainerCertificate = document.createElement('div');
+
         newInputCertificate.classList.add('certificate-input');
+        newContainerCertificate.classList.add('certificateContainer');
         
         newHeartIcon.src = "./img/heart.svg";
         newHeartIcon.classList.add('heart-icon');
@@ -19,9 +24,10 @@ btnAddCertificate.addEventListener('click', (event) => {
         constructorCertificate.value = "";
         newInputCertificate.readOnly = true;
     
-       
-        certificates.appendChild(newInputCertificate);
-        certificates.appendChild(newHeartIcon);
+        newContainerCertificate.appendChild(newInputCertificate);
+        newContainerCertificate.appendChild(newHeartIcon);
+
+        certificates.appendChild(newContainerCertificate);
     } 
     else if (certificates.querySelectorAll('.quantity-error').length == 0 && btnAddCertificate.Disabled == true) {    
         let errorQuantCertificates = document.createElement('span');
@@ -35,7 +41,7 @@ btnAddCertificate.addEventListener('click', (event) => {
 });
 
 
-certificates.addEventListener('change', () => {
+certificates.addEventListener('mousedown', () => {
     let favorites = document.querySelectorAll('.heart-icon');
 
     favorites.forEach(element => {
@@ -47,10 +53,9 @@ certificates.addEventListener('change', () => {
             else {
                 element.src = "img/heart.svg";
             }
-            
         });
     });
-})
+});
 
 
 
