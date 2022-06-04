@@ -79,6 +79,7 @@ input {
   padding: 11px 0 11px 12px;
   width: 510px;
   border-radius: 4px;
+<<<<<<< HEAD
 }
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
@@ -91,11 +92,13 @@ input {
   input {
     width: 280px;
   }
+=======
+>>>>>>> SecondTab
 }
 
 .btnActive {
-  background-color: #FFF;
-  border: 2px solid #074EE8;
+  background-color: #074EE8 !important;
+  color: #FFF !important;
 }
 
 .btn {
@@ -117,6 +120,7 @@ input {
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 425px) and (max-width: 767px) {
   .container {
     max-width: 400px;
@@ -129,6 +133,8 @@ input {
   }
 }
 
+=======
+>>>>>>> SecondTab
 .container::after, .container::before {
   content: "";
   display: table;
@@ -141,10 +147,13 @@ input {
           box-shadow: inset 0px -3px 0px #074EE8 !important;
 }
 
+<<<<<<< HEAD
 .invisible {
   display: none;
 }
 
+=======
+>>>>>>> SecondTab
 .tab h1 {
   font-family: "Inter", sans-serif;
   font-size: 18px;
@@ -160,6 +169,7 @@ input {
 }
 
 .tab ul {
+<<<<<<< HEAD
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -180,6 +190,11 @@ input {
   }
 }
 
+=======
+  margin-bottom: 35px;
+}
+
+>>>>>>> SecondTab
 .tab ul li {
   text-align: center;
   padding: 13px 0;
@@ -191,6 +206,7 @@ input {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 425px) and (max-width: 767px) {
   .tab ul li {
     width: 400px;
@@ -201,6 +217,10 @@ input {
   .tab ul li {
     width: 300px;
   }
+=======
+.tab form {
+  max-width: 515px;
+>>>>>>> SecondTab
 }
 
 .tab label {
@@ -213,6 +233,7 @@ input {
   margin-top: 4px;
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 425px) and (max-width: 767px) {
   .tab input {
     width: 400px;
@@ -225,6 +246,8 @@ input {
   }
 }
 
+=======
+>>>>>>> SecondTab
 .tab input::-webkit-input-placeholder {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
@@ -249,6 +272,7 @@ input {
   color: #767676;
 }
 
+<<<<<<< HEAD
 .tab .name {
   margin-bottom: 28px;
 }
@@ -360,6 +384,14 @@ input {
   .tab #inputAge {
     width: 115px !important;
   }
+=======
+.tab .linkedin {
+  margin-bottom: 28px;
+}
+
+.tab .github {
+  margin-bottom: 270px;
+>>>>>>> SecondTab
 }
 
 .tab .next {
@@ -390,4 +422,12 @@ input {
 .tab .next img {
   display: none;
 }
+<<<<<<< HEAD
+=======
+
+.tab #linkedinError, .tab #githubError {
+  color: red;
+  margin-bottom: 20px;
+}
+>>>>>>> SecondTab
 /*# sourceMappingURL=style.css.map */

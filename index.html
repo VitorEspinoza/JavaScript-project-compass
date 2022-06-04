@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
+<<<<<<< HEAD
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 </head>
@@ -88,6 +89,42 @@
   <script src="js/LoadBirthdayFields.js"></script>
   <script src="js/EmailValidation.js"></script>
   <script src="js/rimelPhone.js"></script>
+=======
+</head>
+
+<body>
+  <section class="second-tab tab container">
+    <div>
+      <div>
+        <h1>Team Sign Up</h1>
+        <ul class="flex">
+          <li>Basic</li>
+          <li class="active">Social</li>
+          <li>Certificates</li>
+        </ul>
+      </div>
+        <form action="" id="social" onchange="formValidation()">
+          <label id="linkedinError"></label>
+          <div class="linkedin">
+            <label for="LinkedIn">LinkedIn</label>
+            <input type="text" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" required name="LinkedIn" id="linkedin">
+          </div>
+          <label id="githubError"></label>
+          <div class="github">
+            <label for="Github">Github&#42;</label>
+            <input type="text" placeholder="https://github.com/foobar" required name="Github" id="github">
+          </div>
+          <div class="flex next">
+            <button class="btn">
+              Next
+              <img src="assets/sinal-maior.svg" alt="Next&#62;" id="arrow">
+            </button>
+          </div>
+        </form>
+    </div> 
+  </section>
+  <script src="/js/urlValidation.js"></script>
+>>>>>>> SecondTab
 </body>
 
 </html>

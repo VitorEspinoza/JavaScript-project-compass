@@ -32,8 +32,8 @@ input {
 }
 }
 .btnActive {
-  background-color: #FFF;
-  border: 2px solid $primaryColor;
+  background-color: $primaryColor !important;
+  color: #FFF !important;
 }
 
 .btn {
