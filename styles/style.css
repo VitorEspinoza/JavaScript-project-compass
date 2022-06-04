@@ -79,7 +79,6 @@ input {
   padding: 11px 0 11px 12px;
   width: 510px;
   border-radius: 4px;
-<<<<<<< HEAD
 }
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
@@ -92,8 +91,6 @@ input {
   input {
     width: 280px;
   }
-=======
->>>>>>> SecondTab
 }
 
 .btnActive {
@@ -120,7 +117,6 @@ input {
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
 @media only screen and (min-width: 425px) and (max-width: 767px) {
   .container {
     max-width: 400px;
@@ -133,8 +129,6 @@ input {
   }
 }
 
-=======
->>>>>>> SecondTab
 .container::after, .container::before {
   content: "";
   display: table;
@@ -147,13 +141,10 @@ input {
           box-shadow: inset 0px -3px 0px #074EE8 !important;
 }
 
-<<<<<<< HEAD
 .invisible {
   display: none;
 }
 
-=======
->>>>>>> SecondTab
 .tab h1 {
   font-family: "Inter", sans-serif;
   font-size: 18px;
@@ -169,7 +160,6 @@ input {
 }
 
 .tab ul {
-<<<<<<< HEAD
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -190,11 +180,6 @@ input {
   }
 }
 
-=======
-  margin-bottom: 35px;
-}
-
->>>>>>> SecondTab
 .tab ul li {
   text-align: center;
   padding: 13px 0;
@@ -206,7 +191,6 @@ input {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 @media only screen and (min-width: 425px) and (max-width: 767px) {
   .tab ul li {
     width: 400px;
@@ -217,10 +201,6 @@ input {
   .tab ul li {
     width: 300px;
   }
-=======
-.tab form {
-  max-width: 515px;
->>>>>>> SecondTab
 }
 
 .tab label {
@@ -233,7 +213,6 @@ input {
   margin-top: 4px;
 }
 
-<<<<<<< HEAD
 @media only screen and (min-width: 425px) and (max-width: 767px) {
   .tab input {
     width: 400px;
@@ -246,8 +225,6 @@ input {
   }
 }
 
-=======
->>>>>>> SecondTab
 .tab input::-webkit-input-placeholder {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
@@ -272,7 +249,6 @@ input {
   color: #767676;
 }
 
-<<<<<<< HEAD
 .tab .name {
   margin-bottom: 28px;
 }
@@ -384,14 +360,6 @@ input {
   .tab #inputAge {
     width: 115px !important;
   }
-=======
-.tab .linkedin {
-  margin-bottom: 28px;
-}
-
-.tab .github {
-  margin-bottom: 270px;
->>>>>>> SecondTab
 }
 
 .tab .next {
@@ -422,12 +390,113 @@ input {
 .tab .next img {
   display: none;
 }
-<<<<<<< HEAD
-=======
+
+.tab h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-top: 55px;
+  margin-bottom: 35px;
+}
+
+.tab > div {
+  display: table;
+  margin: 0 auto;
+}
+
+.tab ul {
+  margin-bottom: 35px;
+}
+
+.tab ul li {
+  text-align: center;
+  padding: 13px 0;
+  width: 170px;
+  -webkit-box-shadow: inset 0px -2px 0px #AAAAAA;
+          box-shadow: inset 0px -2px 0px #AAAAAA;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tab form {
+  max-width: 515px;
+}
+
+.tab label {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  color: #767676;
+}
+
+.tab input {
+  margin-top: 4px;
+}
+
+.tab input::-webkit-input-placeholder {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #767676;
+}
+
+.tab input:-ms-input-placeholder {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #767676;
+}
+
+.tab input::-ms-input-placeholder {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #767676;
+}
+
+.tab input::placeholder {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #767676;
+}
+
+.tab .linkedin {
+  margin-bottom: 28px;
+}
+
+.tab .github {
+  margin-bottom: 270px;
+}
+
+.tab .next {
+  margin-bottom: 60px;
+  margin-top: 43px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.tab .next .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 40px;
+  border: 2px solid #074EE8;
+  background-color: #FFF;
+  color: #074EE8;
+  cursor: pointer;
+}
+
+.tab .next img {
+  display: none;
+}
 
 .tab #linkedinError, .tab #githubError {
   color: red;
   margin-bottom: 20px;
 }
->>>>>>> SecondTab
 /*# sourceMappingURL=style.css.map */
