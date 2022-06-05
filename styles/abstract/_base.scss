@@ -70,7 +70,7 @@ input {
 
 .container {
   max-width: 617px;
-  margin: 0 auto;
+  margin: 0 auto !important;
 
   @include responsive(mobileL){
     max-width: 400px;
@@ -145,6 +145,13 @@ input {
       @include font(16px, $nunito);
       color: $inputColor;
   }
+
+  .errorMessageStyle {
+    @include font(14px, $nunito);
+    color: red;
+    margin: 6px 0;
+    display: block;
+}
 }
 
 
@@ -154,7 +161,7 @@ input {
 }
 
 .invisible {
-  display: none;
+  display: none !important;
 }
 
 button {

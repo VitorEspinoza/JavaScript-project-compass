@@ -1,6 +1,6 @@
-class Qualification {
+class PersonalInfo {
 
-    constructor(fullName, nickname, email, phone, birthday, agr)
+    constructor(fullName, nickname, email, phone, birthday, age)
     {
         this._fullName = fullName;
         this._nickname = nickname;
@@ -11,7 +11,7 @@ class Qualification {
     }
 
     get FullName() {
-        return this.fullName;
+        return this._fullName;
     }
 
     set FullName(value) {

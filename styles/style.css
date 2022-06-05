@@ -150,7 +150,7 @@ input::placeholder {
 
 .container {
   max-width: 617px;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
@@ -275,6 +275,14 @@ input::placeholder {
   color: #767676;
 }
 
+.tab .errorMessageStyle {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  color: red;
+  margin: 6px 0;
+  display: block;
+}
+
 .active {
   color: #074EE8;
   -webkit-box-shadow: inset 0px -3px 0px #074EE8 !important;
@@ -282,7 +290,7 @@ input::placeholder {
 }
 
 .invisible {
-  display: none;
+  display: none !important;
 }
 
 button {
@@ -469,15 +477,28 @@ button {
   margin-bottom: 20px;
 }
 
+.thirdTab {
+  max-width: 515px;
+}
+
 .thirdTab #certificates .certificateContainer {
   position: relative;
+}
+
+.thirdTab #certificates #input-new-certificate {
+  width: 100%;
+}
+
+.thirdTab #certificates input {
+  margin-bottom: 18px;
+  width: 80%;
 }
 
 .thirdTab #certificates .heart-icon {
   position: absolute;
   width: 15.68px;
   height: 13.67px;
-  right: 13.16px;
+  right: 116.16px;
   bottom: 30.5px;
   cursor: pointer;
 }
@@ -490,14 +511,15 @@ button {
   color: #767676;
 }
 
-.thirdTab form input {
-  margin-bottom: 33px;
+.thirdTab form label {
+  margin-bottom: 4px;
+  font-size: 14px;
 }
 
-.thirdTab form .errorMessageStyle {
-  font-size: 14px;
-  color: red;
-  margin: 6px 0;
+.thirdTab form input {
+  max-width: 515px;
+  height: 40px;
+  margin-bottom: 33px;
 }
 
 .thirdTab fieldset {

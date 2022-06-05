@@ -25,7 +25,6 @@
     .info-flex {
         gap: 25px;
         margin-bottom: 28px;
-        
         input[type=email] {
         width: 330px;
         @include responsive (mobileS) {
@@ -108,7 +107,6 @@
             background-color: #FFF;
             color: $primaryColor;
             cursor: pointer;
-            // mudar bg-color com base na validacao do form
         }
     }
 

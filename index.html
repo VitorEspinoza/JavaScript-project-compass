@@ -24,27 +24,27 @@
         <li>Certificates</li>
       </ul>
 
-      <form action="">
+      <form onsubmit="saveInfosController.SavePersonalInfo(event)">
         <div class="name">
           <label for="Name">Full Name *</label>
-          <span class="errorMessageStyle invisible"></span> 
-          <input class="input-name" type="text" name="Name" id="" placeholder="Foo Bar" required>
+          <span class="errorMessageStyle invisible">O nome não pode conter números e caracteres especiais</span> 
+          <input class="full-name input-name required" type="text" name="Name" placeholder="Foo Bar">
         </div>
         <div class="nickname">
           <label for="Nickname">Nickname</label>
-          <span class="errorMessageStyle invisible"></span> 
-          <input class="input-name" type="text" name="Nickname" id="" placeholder="Juanito">
+          <span class="errorMessageStyle invisible">O nickname não pode conter números e caracteres especiais</span> 
+          <input class="nickname input-name" type="text" name="Nickname" placeholder="Juanito">
         </div>
 
         <div class="flex info-flex">
           <div>
             <label for="Email">Email *</label>
-            <span class="errorMessageStyle invisible"></span> 
-            <input class="input-email" type="email" name="Email" id="" placeholder="foo@bar.com">
+            <span class="errorMessageStyle invisible">Este email é inválido</span> 
+            <input class="email input-email required" type="email" name="Email" id="" placeholder="foo@bar.com">
           </div>
           <div>
             <label for="Phone">Phone</label>
-            <input placeholder="(83) 00000-0000" type="text" name="Phone" id="telephone">
+            <input class="phone"  placeholder="(83) 00000-0000" type="text" name="Phone" id="telephone">
           </div>
         </div>
         <div class="birthday">
@@ -52,26 +52,26 @@
           <div class="flex selects">
             <div class="flex select">
               <label for="Day">Day</label>
-              <select name="Day" class="select-day" onchange="CalculateAge()">
+              <select name="Day" class="select-day required" onchange="CalculateAge()">
                 <option>  </option>
               </select>
             </div>
             <div class="flex select">
               <label for="Month">Month</label>
-              <select name="Month" class="select-month" onchange="(AddOptionDayBasedFields(), CalculateAge());"> 
+              <select name="Month" class="select-month required" onchange="(AddOptionDayBasedFields(), CalculateAge());"> 
                 <option>  </option>
               </select>
             </div>
             <div class="break"></div>
             <div class="flex select">
               <label for="Year">Year</label>
-              <select name="Year" class="select-year" onchange="(AddOptionDayBasedFields(), CalculateAge());" >
+              <select name="Year" class="select-year required" onchange="(AddOptionDayBasedFields(), CalculateAge());" >
                 <option>  </option>
               </select>
             </div>
             <div class="flex select">
               <label for="Age">Age</label>
-              <input name="Age" readonly="true" placeholder="18" id="inputAge">
+              <input class="required age" name="Age" readonly="true" placeholder="18" id="inputAge">
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@
           <p>I accept the term and privacy</p>
         </div>
         <div class="flex nextContainer">
-          <button class="btn next btn-post">
+          <button type="submit" class="btn next btn-post">
             Next 
             <img class="btn-img" src="./assets/vetor-setinha.svg" alt="">
           </button>
@@ -99,21 +99,19 @@
           <li>Certificates</li>
         </ul>
       </div>
-        <form action="" id="social" onchange="formValidation()">
-          <label id="linkedinError"></label>
+        <form  id="social" onsubmit="saveInfosController.SaveSocialInfo(event)">
           <div class="linkedin">
             <label for="LinkedIn">LinkedIn</label>
-            <span class="errorMessageStyle invisible"></span> 
-            <input class="input-url" type="text" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" required name="LinkedIn" id="linkedin">
+            <span class="errorMessageStyle invisible">A url que você digitou é inválida</span> 
+            <input class="input-url" type="text" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" name="LinkedIn" id="linkedin">
           </div>
-          <label id="githubError"></label>
           <div class="github">
-            <label for="Github">Github&#42;</label>
-            <span class="errorMessageStyle invisible"></span> 
-            <input class="input-url" type="text" placeholder="https://github.com/foobar" required name="Github" id="github">
+            <label for="Github">Github *</label>
+            <span class="errorMessageStyle invisible">A url que você digitou é inválida</span> 
+            <input class="input-url required" type="text" placeholder="https://github.com/foobar" name="Github" id="github">
           </div>
           <div class="flex nextContainer">
-            <button class="btn next btn-post">
+            <button type="submit" class="btn next btn-post">
               Next
               <img class="btn-img" src="assets/sinal-maior.svg" alt="Next&#62;" id="arrow">
             </button>
@@ -131,41 +129,40 @@
       <li class="active">Certificates</li>
     </ul>
 
-    <form class="flex">
+    <form class="flex" onsubmit="saveInfosController.SaveCertificates(event)">
       <fieldset id="certificates">      
         <label for="certificates">Certificates</label> 
         <div class="certificateContainer">
-          <span class="errorMessageStyle invisible"></span>
-          <input type="text" name="certificates" id="input-new-certificate" class="certificate-input input-url" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+          <span class="errorMessageStyle invisible">A url que você digitou é inválida</span>
+          <input type="text" name="certificates" id="input-new-certificate" class="certificate-input input-url required" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
         </div>
       </fieldset> 
-      <button class="flex btn btn-certificate btn-post">
+      <button type="submit" class="flex btn btn-certificate btn-post">
         <img src="img/moreIcon.svg" class="btn-img">    
         <p>More</p>
         <img src="img/arrowIcon.svg" class="btn-img">
       </button>
     </form>
 
-    <form class="flex">
+    <form class="flex" onsubmit="saveInfosController.SaveQualifications(event)">
       <fieldset >
         <label for="teamName">Team Name *</label>
-        <span class="errorMessageStyle invisible"></span> 
-        <input class="input-url" type="text" name="teamName" id="teamName" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+        <span class="errorMessageStyle invisible">A url que você digitou é inválida</span> 
+        <input class="input-url required" type="text" name="teamName" id="teamName" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
       </fieldset>
 
       <fieldset>   
         <label for="institution">Institution *</label>    
-        <span class="errorMessageStyle invisible"></span> 
-        <input class="input-name" type="text" name="institution" id="institution" placeholder="Universidade Federal da Paraíba" minlength="2">
+        <span class="errorMessageStyle invisible">O nome da instituição não pode conter números e caracteres especiais</span> 
+        <input class="input-name required" type="text" name="institution" id="institution" placeholder="Universidade Federal da Paraíba" minlength="2">
       </fieldset>
 
       <fieldset>
         <label for="graduation">Graduation *</label>
-        <span class="errorMessageStyle invisible"></span> 
-        <input class="input-name" type="text" name="graduation" id="graduation" placeholder="Ciências da Computação" minlength="2">
+        <span class="errorMessageStyle invisible">O nome da graduação não pode conter números e caracteres especiais</span> 
+        <input class="input-name required" type="text" name="graduation" id="graduation" placeholder="Ciências da Computação" minlength="2">
       </fieldset>
-
-      <button class="flex btn btnFinish btn-post next">
+      <button type="submit" class="flex btn btnFinish btn-post next">
         <img src="img/okIcon.svg" class="btn-img">
         <p>Finish</p>
       </button>
@@ -175,14 +172,20 @@
     <h1>Teste</h1>
   </section>
 
-  <script src="js/validation.js"></script>
-  <script src="js/addCertificates.js"></script> 
-  <script src="js/saveInfos.js"></script> 
-  <script src="js/LoadBirthdayFields.js"></script> 
-  <script src="js/urlValidation.js"></script>
-  <script src="js/EmailValidation.js"></script> 
-  <script src="js/rimelPhone.js"></script>
-  <script src="js/tabsNavigate.js"></script>
+  
+  <script src="js/app/lib/addCertificates.js"></script> 
+  <script src="js/app/lib/LoadBirthdayFields.js"></script> 
+  <script src="js/app/lib/rimelPhone.js"></script>
+  <script src="js/app/lib/tabsNavigate.js"></script>
+  <script src="js/app/models/PersonalInfo.js"></script>
+  <script src="js/app/models/SocialInfo.js"></script>
+  <script src="js/app/models/Qualification.js"></script>
+  <script src="js/app/models/Person.js"></script>
+  <script src="js/app/controllers/SaveInfosController.js"></script>
+  <script>
+    let saveInfosController = new SaveInfosController();
+  </script>
+  <script src="js/app/lib/validation.js"></script>
 </body>
 
 </html>

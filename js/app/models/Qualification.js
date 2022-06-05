@@ -9,7 +9,7 @@ class Qualification {
     }
 
     get Certificates() {
-        return this.certificates;
+        return this._certificates;
     }
 
     set Certificates(value) {
@@ -22,7 +22,7 @@ class Qualification {
     }
 
     set TeamName(value) {
-        this._certificates = value;
+        this._teamName = value;
     }
 
     get Institution() {
@@ -30,7 +30,7 @@ class Qualification {
     }
 
     set Institution(value) {
-        this._certificates = value;
+        this._institution = value;
     }
 
     get Graduation() {
@@ -38,6 +38,6 @@ class Qualification {
     }
 
     set Graduation(value) {
-        this._certificates = value;
+        this._graduation = value;
     }
 }

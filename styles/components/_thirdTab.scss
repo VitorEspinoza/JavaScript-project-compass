@@ -1,15 +1,24 @@
 .thirdTab {
-    #certificates {
-        
+    max-width: 515px;
+   
+    #certificates {     
         .certificateContainer {
             position: relative;
+        }
+
+        #input-new-certificate {
+            width: 100%;
+        }
+        input {
+            margin-bottom: 18px;
+            width: 80%;
         }
 
         .heart-icon {
             position: absolute;
             width: 15.68px;
             height: 13.67px;
-            right: 13.16px;
+            right: 116.16px;
             bottom: 30.5px;
             cursor: pointer;
         }
@@ -19,24 +28,22 @@
     form {
         flex-direction: column;
         color: $inputColor;
-   
 
-        input {         
+        label {
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+
+        input {
+            max-width: 515px;
+            height: 40px;
             margin-bottom: 33px;
 
         }
-
-        .errorMessageStyle {
-            font-size: 14px;
-            color: red;
-            margin: 6px 0;
-
-        }
     }
-
     fieldset {
         display: flex;
-        flex-direction: column;
+        flex-direction: column;  
     }
 
     button {
@@ -53,9 +60,5 @@
         line-height: 18px;
         margin-top: 24px;
     }
+
 }
-
-
-
-
-
