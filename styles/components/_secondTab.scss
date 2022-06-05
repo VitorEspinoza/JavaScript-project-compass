@@ -1,48 +1,5 @@
-.tab {
-    h1 {
-        @include font(18px, $inter);
-        line-height: 24px;
-        font-weight: 600;
-        margin-top: 55px;
-        margin-bottom: 35px;
-    }
-
-    & > div {
-        display: table;
-        margin: 0 auto;
-    }
-
-    ul 
-    {
-        margin-bottom: 35px;
-        li {
-            text-align: center;
-            padding: 13px 0;
-            width: 170px;
-            box-shadow: inset 0px -2px 0px #AAAAAA;
-            @include font(16px, $nunito);
-            cursor: pointer;
-        }
-    }
-    
-    form {
-        max-width: 515px;
-    }
-
-    label {
-        @include font(14px, $nunito);
-        color: $inputColor;
-    }
-
-    input {
-        margin-top: 4px;
-    }
-
-    input::placeholder {
-        @include font(16px, $nunito);
-        color: $inputColor;
-    }
-
+.second-tab 
+{
     .linkedin {
         margin-bottom: 28px;
     }
@@ -66,9 +23,6 @@
             background-color: #FFF;
             color: $primaryColor;
             cursor: pointer; 
-        }
-        img {
-            display: none; 
         }
     }
 

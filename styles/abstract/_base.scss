@@ -45,6 +45,10 @@ input {
   background-color: $primaryColor!important;
   border: none;
   color: #FFF !important;
+
+  img {
+    display: block !important;
+  }
 }
 
 .btn {
@@ -59,6 +63,9 @@ input {
   border: 2px solid $primaryColor !important;
   outline: none;
   text-decoration: none;
+  img {
+    display: none;
+  }
 }
 
 .container {
@@ -78,6 +85,68 @@ input {
     clear: both;
   }
 }
+
+.tab {
+  h1 {
+      @include font(18px, $inter);
+      line-height: 24px;
+      font-weight: 600;
+      margin-top: 55px;
+      margin-bottom: 35px;
+  }
+
+  & > div {
+      display: table;
+      margin: 0 auto;
+  }
+
+  ul 
+  {
+      flex-direction: column;
+      align-content: center;
+      @include responsive (tablet){
+          flex-direction: row;
+          align-content: none;
+      }
+      margin-bottom: 35px;
+      li {
+          @include responsive (mobileL){
+              width: 400px;
+          }
+          @include responsive (mobileS){
+              width: 300px;
+          }
+          text-align: center;
+          padding: 13px 0;
+          width: 170px;
+          box-shadow: inset 0px -2px 0px #AAAAAA;
+          @include font(16px, $nunito);
+          cursor: pointer;
+      }
+  }    
+
+  label {
+      @include font(14px, $nunito);
+      color: $inputColor;
+    
+  }
+
+  input {
+      margin-top: 4px;
+      @include responsive (mobileL){
+          width: 400px;
+      }
+      @include responsive (mobileS) {
+          width: 300px;
+      }
+  }
+
+  input::placeholder {
+      @include font(16px, $nunito);
+      color: $inputColor;
+  }
+}
+
 
 .active {
   color: $primaryColor;

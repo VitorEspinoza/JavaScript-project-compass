@@ -125,6 +125,10 @@ input::placeholder {
   color: #FFF !important;
 }
 
+.btnActive img {
+  display: block !important;
+}
+
 .btn {
   padding: 11px 12px;
   border-radius: 4px;
@@ -138,6 +142,10 @@ input::placeholder {
   border: 2px solid #074EE8 !important;
   outline: none;
   text-decoration: none;
+}
+
+.btn img {
+  display: none;
 }
 
 .container {
@@ -161,20 +169,6 @@ input::placeholder {
   content: "";
   display: table;
   clear: both;
-}
-
-.active {
-  color: #074EE8;
-  -webkit-box-shadow: inset 0px -3px 0px #074EE8 !important;
-          box-shadow: inset 0px -3px 0px #074EE8 !important;
-}
-
-.invisible {
-  display: none;
-}
-
-button {
-  cursor: pointer;
 }
 
 .tab h1 {
@@ -281,19 +275,33 @@ button {
   color: #767676;
 }
 
-.tab .name {
+.active {
+  color: #074EE8;
+  -webkit-box-shadow: inset 0px -3px 0px #074EE8 !important;
+          box-shadow: inset 0px -3px 0px #074EE8 !important;
+}
+
+.invisible {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.first-tab .name {
   margin-bottom: 28px;
 }
 
-.tab .nickname {
+.first-tab .nickname {
   margin-bottom: 20px;
 }
 
-.tab .check {
+.first-tab .check {
   gap: 8px;
 }
 
-.tab .check p {
+.first-tab .check p {
   margin: auto 0;
   font-family: "Nunito", sans-serif;
   font-size: 16;
@@ -301,60 +309,60 @@ button {
   font-weight: 400;
 }
 
-.tab .check input[type=checkbox] {
+.first-tab .check input[type=checkbox] {
   width: 20px;
   height: 20px;
   border-radius: 2px;
 }
 
-.tab .info-flex {
+.first-tab .info-flex {
   gap: 25px;
   margin-bottom: 28px;
 }
 
-.tab .info-flex input[type=email] {
+.first-tab .info-flex input[type=email] {
   width: 330px;
 }
 
 @media only screen and (max-width: 424px) {
-  .tab .info-flex input[type=email] {
+  .first-tab .info-flex input[type=email] {
     width: 300px;
   }
 }
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
-  .tab .info-flex input[type=email] {
-    width: 400px;
+  .first-tab .info-flex input[type=email] {
+    width: 220px;
   }
 }
 
-.tab .info-flex input[type=text] {
+.first-tab .info-flex input[type=text] {
   width: 155px;
 }
 
-.tab .birthday {
+.first-tab .birthday {
   margin-bottom: 45px;
 }
 
-.tab .birthday h2 {
+.first-tab .birthday h2 {
   font-family: "Nunito", sans-serif;
   font-size: 18px;
   color: #767676;
   margin-bottom: 14px;
 }
 
-.tab .birthday .selects {
+.first-tab .birthday .selects {
   gap: 22px;
 }
 
-.tab .birthday .select {
+.first-tab .birthday .select {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.tab .birthday select {
+.first-tab .birthday select {
   margin-top: 4px;
   outline: none;
   width: 115px;
@@ -364,27 +372,27 @@ button {
   border-radius: 4px;
 }
 
-.tab .birthday input {
+.first-tab .birthday input {
   width: 100px;
   height: 40px;
 }
 
-.tab form {
+.first-tab form {
   max-width: 515px;
 }
 
 @media only screen and (max-width: 424px) {
-  .tab .select-month {
+  .first-tab .select-month {
     width: 100px !important;
   }
 }
 
-.tab .break {
+.first-tab .break {
   display: none;
 }
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
-  .tab .break {
+  .first-tab .break {
     display: block;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -393,12 +401,12 @@ button {
 }
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
-  .tab #inputAge {
+  .first-tab #inputAge {
     width: 115px !important;
   }
 }
 
-.tab .nextContainer {
+.first-tab .nextContainer {
   margin-bottom: 60px;
   margin-top: 43px;
   -webkit-box-pack: end;
@@ -406,7 +414,7 @@ button {
           justify-content: flex-end;
 }
 
-.tab .nextContainer .btn {
+.first-tab .nextContainer .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,86 +431,15 @@ button {
   cursor: pointer;
 }
 
-.tab .nextContainer img {
-  display: none;
-}
-
-.tab h1 {
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 600;
-  margin-top: 55px;
-  margin-bottom: 35px;
-}
-
-.tab > div {
-  display: table;
-  margin: 0 auto;
-}
-
-.tab ul {
-  margin-bottom: 35px;
-}
-
-.tab ul li {
-  text-align: center;
-  padding: 13px 0;
-  width: 170px;
-  -webkit-box-shadow: inset 0px -2px 0px #AAAAAA;
-          box-shadow: inset 0px -2px 0px #AAAAAA;
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.tab form {
-  max-width: 515px;
-}
-
-.tab label {
-  font-family: "Nunito", sans-serif;
-  font-size: 14px;
-  color: #767676;
-}
-
-.tab input {
-  margin-top: 4px;
-}
-
-.tab input::-webkit-input-placeholder {
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  color: #767676;
-}
-
-.tab input:-ms-input-placeholder {
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  color: #767676;
-}
-
-.tab input::-ms-input-placeholder {
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  color: #767676;
-}
-
-.tab input::placeholder {
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  color: #767676;
-}
-
-.tab .linkedin {
+.second-tab .linkedin {
   margin-bottom: 28px;
 }
 
-.tab .github {
+.second-tab .github {
   margin-bottom: 270px;
 }
 
-.tab .nextContainer {
+.second-tab .nextContainer {
   margin-bottom: 60px;
   margin-top: 43px;
   -webkit-box-pack: end;
@@ -510,7 +447,7 @@ button {
           justify-content: flex-end;
 }
 
-.tab .nextContainer .btn {
+.second-tab .nextContainer .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,70 +464,13 @@ button {
   cursor: pointer;
 }
 
-.tab .nextContainer img {
-  display: none;
-}
-
-.tab #linkedinError, .tab #githubError {
+.second-tab #linkedinError, .second-tab #githubError {
   color: red;
   margin-bottom: 20px;
 }
 
-.thirdTab {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-family: "Nunito", sans-serif;
-  margin: 0 auto;
-  padding-left: 35px;
-  padding-right: 35px;
-  max-width: 515px;
-  margin: 0 auto;
-  font-weight: 400;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-}
-
-.thirdTab h1 {
-  font-weight: bold;
-  margin-top: 40px;
-  margin-bottom: 33px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  font-family: "Inter", sans-serif;
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  color: #111111;
-}
-
-.thirdTab ul {
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 37px;
-  color: #111111;
-}
-
-.thirdTab ul li {
-  -webkit-box-shadow: inset 0px -2px 0px #AAAAAA;
-          box-shadow: inset 0px -2px 0px #AAAAAA;
-  text-align: center;
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  padding: 15px 0;
-  width: 171.67px;
-}
-
 .thirdTab #certificates .certificateContainer {
   position: relative;
-}
-
-.thirdTab #certificates input {
-  margin-bottom: 18px;
-  width: 100%;
 }
 
 .thirdTab #certificates .heart-icon {
@@ -610,14 +490,7 @@ button {
   color: #767676;
 }
 
-.thirdTab form label {
-  margin-bottom: 4px;
-  font-size: 14px;
-}
-
 .thirdTab form input {
-  max-width: 515px;
-  height: 40px;
   margin-bottom: 33px;
 }
 

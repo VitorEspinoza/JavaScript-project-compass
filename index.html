@@ -27,17 +27,20 @@
       <form action="">
         <div class="name">
           <label for="Name">Full Name *</label>
-          <input type="text" name="Name" id="" placeholder="Foo Bar" required>
+          <span class="errorMessageStyle invisible"></span> 
+          <input class="input-name" type="text" name="Name" id="" placeholder="Foo Bar" required>
         </div>
         <div class="nickname">
           <label for="Nickname">Nickname</label>
-          <input type="text" name="Nickname" id="" placeholder="Juanito">
+          <span class="errorMessageStyle invisible"></span> 
+          <input class="input-name" type="text" name="Nickname" id="" placeholder="Juanito">
         </div>
 
         <div class="flex info-flex">
           <div>
             <label for="Email">Email *</label>
-            <input type="email" name="Email" id="" placeholder="foo@bar.com">
+            <span class="errorMessageStyle invisible"></span> 
+            <input class="input-email" type="email" name="Email" id="" placeholder="foo@bar.com">
           </div>
           <div>
             <label for="Phone">Phone</label>
@@ -77,9 +80,9 @@
           <p>I accept the term and privacy</p>
         </div>
         <div class="flex nextContainer">
-          <button class="btn next">
+          <button class="btn next btn-post">
             Next 
-            <img src="./assets/vetor-setinha.svg" alt="">
+            <img class="btn-img" src="./assets/vetor-setinha.svg" alt="">
           </button>
         </div>
       </form>
@@ -100,24 +103,26 @@
           <label id="linkedinError"></label>
           <div class="linkedin">
             <label for="LinkedIn">LinkedIn</label>
-            <input type="text" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" required name="LinkedIn" id="linkedin">
+            <span class="errorMessageStyle invisible"></span> 
+            <input class="input-url" type="text" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" required name="LinkedIn" id="linkedin">
           </div>
           <label id="githubError"></label>
           <div class="github">
             <label for="Github">Github&#42;</label>
-            <input type="text" placeholder="https://github.com/foobar" required name="Github" id="github">
+            <span class="errorMessageStyle invisible"></span> 
+            <input class="input-url" type="text" placeholder="https://github.com/foobar" required name="Github" id="github">
           </div>
           <div class="flex nextContainer">
-            <button class="btn next">
+            <button class="btn next btn-post">
               Next
-              <img src="assets/sinal-maior.svg" alt="Next&#62;" id="arrow">
+              <img class="btn-img" src="assets/sinal-maior.svg" alt="Next&#62;" id="arrow">
             </button>
           </div>
         </form>
     </div> 
   </section>
 
-  <section class="thirdTab flex tab invisible">
+  <section class="thirdTab container tab invisible">
     <h1>Team Sign Up</h1>
     
     <ul class="flex navMenu">
@@ -128,9 +133,9 @@
 
     <form class="flex">
       <fieldset id="certificates">      
-        <label for="certificates">Certificates</label>
-        <span class="errorMessageStyle invisible"></span>
+        <label for="certificates">Certificates</label> 
         <div class="certificateContainer">
+          <span class="errorMessageStyle invisible"></span>
           <input type="text" name="certificates" id="input-new-certificate" class="certificate-input input-url" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
         </div>
       </fieldset> 
@@ -140,6 +145,7 @@
         <img src="img/arrowIcon.svg" class="btn-img">
       </button>
     </form>
+
     <form class="flex">
       <fieldset >
         <label for="teamName">Team Name *</label>
