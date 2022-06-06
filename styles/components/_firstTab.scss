@@ -19,6 +19,17 @@
             width: 20px;
             height: 20px;
             border-radius: 2px;
+            border: none;
+            cursor: pointer;
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: #bbb;
+           
+            &:checked {    
+                background-color: $primaryColor !important;        
+                background: #FFFFFF;
+                background: url(../../assets/check-true.svg) center no-repeat;
+            }
         }
     }
     

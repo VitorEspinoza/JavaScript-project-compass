@@ -61,4 +61,16 @@
         margin-top: 24px;
     }
 
+    .favorite {
+        order: 1;
+    }
+
+    .not-favorite {
+        order: 5;
+    }
+
+    .container-certificados {
+        align-items: center;
+        justify-content: space-between;
+    }
 }

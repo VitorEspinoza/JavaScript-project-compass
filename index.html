@@ -52,31 +52,36 @@
           <div class="flex selects">
             <div class="flex select">
               <label for="Day">Day</label>
-              <select name="Day" class="select-day required" onchange="CalculateAge()">
+              <span class="errorMessageStyle invisible"></span> 
+              <select name="Day" class="select-input select-day required" onchange="CalculateAge()">
                 <option>  </option>
               </select>
             </div>
             <div class="flex select">
               <label for="Month">Month</label>
-              <select name="Month" class="select-month required" onchange="(AddOptionDayBasedFields(), CalculateAge());"> 
+              <span class="errorMessageStyle invisible"></span> 
+              <select name="Month" class="select-input select-month required" onchange="(AddOptionDayBasedFields(), CalculateAge());"> 
                 <option>  </option>
               </select>
             </div>
             <div class="break"></div>
             <div class="flex select">
               <label for="Year">Year</label>
-              <select name="Year" class="select-year required" onchange="(AddOptionDayBasedFields(), CalculateAge());" >
+              <span class="errorMessageStyle invisible"></span> 
+              <select name="Year" class="select-input select-year required" onchange="(AddOptionDayBasedFields(), CalculateAge());" >
                 <option>  </option>
               </select>
             </div>
             <div class="flex select">
               <label for="Age">Age</label>
+              <span class="errorMessageStyle invisible"></span> 
               <input class="required age" name="Age" readonly="true" placeholder="18" id="inputAge">
             </div>
           </div>
         </div>
         <div class="flex check">
-          <input type="checkbox">
+          <span class="errorMessageStyle invisible"></span>
+          <input class="required input-check" type="checkbox">
           <p>I accept the term and privacy</p>
         </div>
         <div class="flex nextContainer">

@@ -321,6 +321,18 @@ button {
   width: 20px;
   height: 20px;
   border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  background-color: #bbb;
+}
+
+.first-tab .check input[type=checkbox]:checked {
+  background-color: #074EE8 !important;
+  background: #FFFFFF;
+  background: url(../../assets/check-true.svg) center no-repeat;
 }
 
 .first-tab .info-flex {
@@ -547,5 +559,26 @@ button {
   width: 91px;
   line-height: 18px;
   margin-top: 24px;
+}
+
+.thirdTab .favorite {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.thirdTab .not-favorite {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+}
+
+.thirdTab .container-certificados {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
