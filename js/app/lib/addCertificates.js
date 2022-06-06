@@ -20,7 +20,7 @@ btnAddCertificate.addEventListener('click', (event) => {
         newInputCertificate.classList.add('not-favorite');
         newContainerCertificate.classList.add('certificateContainer');
         newParentContainer.classList.add('flex');
-        newParentContainer.classList.add('container-certificados');
+        newParentContainer.classList.add('certificates-save');
 
         newHeartIcon.src = "./img/heart.svg";
         newHeartIcon.classList.add('heart-icon');

@@ -1,27 +1,36 @@
 .thirdTab {
     max-width: 515px;
    
-    #certificates {     
+    #certificates { 
+       
         .certificateContainer {
             position: relative;
+            
         }
 
         #input-new-certificate {
             width: 100%;
         }
-        input {
-            margin-bottom: 18px;
-            width: 80%;
-        }
+        
+        .certificates-save {
+            align-items: center;
+            justify-content: space-between;
 
-        .heart-icon {
-            position: absolute;
-            width: 15.68px;
-            height: 13.67px;
-            right: 116.16px;
-            bottom: 30.5px;
-            cursor: pointer;
+            input {
+                margin-bottom: 18px;
+                max-width: 470px;
+            }
+    
+            .heart-icon {
+                position: absolute;
+                width: 15.68px;
+                height: 13.67px;
+                right: 16.16px;
+                bottom: 30.5px;
+                cursor: pointer;
+            }
         }
+       
 
     }
 
@@ -69,8 +78,5 @@
         order: 5;
     }
 
-    .container-certificados {
-        align-items: center;
-        justify-content: space-between;
-    }
+   
 }

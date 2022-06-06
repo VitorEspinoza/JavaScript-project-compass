@@ -1,5 +1,9 @@
 class SaveInfosController {
 
+    constructor() {
+        this._view = new View(document.querySelector('.viewTab'));
+        this._view.update(personObj);
+    }
     SavePersonalInfo(event) {
         event.preventDefault();
         let fullName = document.querySelector('.full-name').value;
