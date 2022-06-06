@@ -508,6 +508,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .thirdTab #certificates .certificates-save input {
@@ -521,6 +522,15 @@ button {
   height: 13.67px;
   right: 16.16px;
   bottom: 30.5px;
+  cursor: pointer;
+}
+
+.thirdTab #certificates .certificates-save .trash-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: -2px;
+  bottom: 25.5px;
   cursor: pointer;
 }
 

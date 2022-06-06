@@ -15,6 +15,7 @@
         .certificates-save {
             align-items: center;
             justify-content: space-between;
+            position: relative;
 
             input {
                 margin-bottom: 18px;
@@ -27,6 +28,15 @@
                 height: 13.67px;
                 right: 16.16px;
                 bottom: 30.5px;
+                cursor: pointer;
+            }
+
+            .trash-icon {
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                right: - 2px;
+                bottom: 25.5px;
                 cursor: pointer;
             }
         }

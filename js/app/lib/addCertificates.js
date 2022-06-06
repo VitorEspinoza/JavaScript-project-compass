@@ -73,6 +73,18 @@ certificates.addEventListener('click', () => {
     });
 });
 
+certificates.addEventListener('click', () => {
+    let trashs = document.querySelectorAll('.trash-icon');
+
+    trashs.forEach(element => {
+        
+        element.addEventListener('click', () => {
+            ParentContainer = element.parentNode;
+            ParentContainer.parentNode.removeChild(ParentContainer);
+        });
+    });
+});
+
 
 
   
