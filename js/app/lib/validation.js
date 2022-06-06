@@ -22,23 +22,22 @@ function ValidationForm(form, e){
   regEmail = new RegExp( /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
  
   var listRequiredInputs = form.querySelectorAll(".required");
-
-  
   let isValidBtn = true;
   
   listRequiredInputs.forEach(input => {
  
-  if (!input.parentNode.querySelector('span').classList.contains("invisible") || input.value == "" || (input.classList.contains("input-check") && !input.checked)) {  
-    isValidBtn = false;
-  } 
+    if (!input.parentNode.querySelector('span').classList.contains("invisible") || input.value == "" || (input.classList.contains("input-check") && !input.checked)) {  
+      isValidBtn = false;
+    }
 
   });
 
   listInputs = Array.prototype.slice(form.querySelectorAll('input'));
+
   listInputs.forEach(input => {
-  if (!input.parentNode.querySelector('span').classList.contains("invisible")) {  
-    isValidBtn = false;
-  } 
+    if (!input.parentNode.querySelector('span').classList.contains("invisible")) {  
+      isValidBtn = false;
+    } 
   });
   
   let btnSubmit = form.querySelector('.btn-post');

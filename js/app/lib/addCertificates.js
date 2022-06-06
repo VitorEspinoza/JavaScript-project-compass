@@ -41,12 +41,14 @@ btnAddCertificate.addEventListener('click', (event) => {
         constructorCertificate.parentNode.querySelector("img").classList .remove("favorite-true");
         newInputCertificate.readOnly = true;
         
+        
         newContainerCertificate.appendChild(newInputCertificate);
         newContainerCertificate.appendChild(newHeartIcon);
+        newContainerCertificate
 
         newParentContainer.appendChild(newContainerCertificate);
         newParentContainer.appendChild(newTrashIcon);
-        newParentContainer.classList.add("container-certificate-options")
+        newParentContainer.classList.add("container-certificate-options");
         
         AddInOrder(newParentContainer, certificates.querySelectorAll(".certificates-save"));
     } 

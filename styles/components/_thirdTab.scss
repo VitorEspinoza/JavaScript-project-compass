@@ -19,6 +19,9 @@
 
         #input-new-certificate {
             width: 100%;
+            &::placeholder {
+                width: 80%;
+            }
         }
         
         .certificateContainer {
@@ -47,6 +50,7 @@
                 @include responsive (mobileS){
                     width: 260px;
                 }
+                
             }
     
             .heart-icon {

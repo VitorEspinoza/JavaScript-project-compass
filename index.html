@@ -85,7 +85,7 @@
           <p>I accept the term and privacy</p>
         </div>
         <div class="flex nextContainer">
-          <button disabled="true" type="submit" class="btn next btn-post">
+          <button disabled="true" type="submit" class="btn next btn-post" id="submitFirstTab">
             Next 
             <img class="btn-img" src="./assets/vetor-setinha.svg" alt="">
           </button>
@@ -116,7 +116,7 @@
             <input class="input-url required" type="text" placeholder="https://github.com/foobar" name="Github" id="github">
           </div>
           <div class="flex nextContainer">
-            <button disabled="true"  type="submit" class="btn next btn-post">
+            <button disabled="true"  type="submit" class="btn next btn-post" id="submitSecondTab">
               Next
               <img class="btn-img" src="assets/sinal-maior.svg" alt="Next&#62;" id="arrow">
             </button>
@@ -168,7 +168,7 @@
         <span class="errorMessageStyle invisible">O nome da graduação não pode conter números e caracteres especiais</span> 
         <input class="input-name required" type="text" name="graduation" id="graduation" placeholder="Ciências da Computação" minlength="2">
       </fieldset>
-      <button disabled="true" type="submit" class="flex btn btnFinish btn-post next">
+      <button disabled="true" type="submit" class="flex btn btnFinish btn-post next" id="submitThirdTab">
         <img src="img/okIcon.svg" class="btn-img">
         <p>Finish</p>
       </button>
