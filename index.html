@@ -85,7 +85,7 @@
           <p>I accept the term and privacy</p>
         </div>
         <div class="flex nextContainer">
-          <button type="submit" class="btn next btn-post">
+          <button disabled="true" type="submit" class="btn next btn-post">
             Next 
             <img class="btn-img" src="./assets/vetor-setinha.svg" alt="">
           </button>
@@ -116,7 +116,7 @@
             <input class="input-url required" type="text" placeholder="https://github.com/foobar" name="Github" id="github">
           </div>
           <div class="flex nextContainer">
-            <button type="submit" class="btn next btn-post">
+            <button disabled="true"  type="submit" class="btn next btn-post">
               Next
               <img class="btn-img" src="assets/sinal-maior.svg" alt="Next&#62;" id="arrow">
             </button>
@@ -139,17 +139,18 @@
         <label for="certificates">Certificates</label> 
         <div class="certificateContainer">
           <span class="errorMessageStyle invisible">A url que você digitou é inválida</span>
-          <input type="text" name="certificates" id="input-new-certificate" class="certificate-input input-url required" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+          <input type="text" name="certificates" id="input-new-certificate"  class="certificate-input input-url required" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+          <img class="heart-icon" src="./img/heart.svg" >
         </div>
       </fieldset> 
-      <button type="submit" class="flex btn btn-certificate btn-post">
+      <button disabled="true" type="submit" class="flex btn btn-certificate btn-post">
         <img src="img/moreIcon.svg" class="btn-img">    
         <p>More</p>
         <img src="img/arrowIcon.svg" class="btn-img">
       </button>
     </form>
 
-    <form class="flex" onsubmit="saveInfosController.SaveQualifications(event)">
+    <form class="flex" onsubmit="saveInfosController.SaveQualifications(event)" >
       <fieldset >
         <label for="teamName">Team Name *</label>
         <span class="errorMessageStyle invisible">A url que você digitou é inválida</span> 
@@ -167,7 +168,7 @@
         <span class="errorMessageStyle invisible">O nome da graduação não pode conter números e caracteres especiais</span> 
         <input class="input-name required" type="text" name="graduation" id="graduation" placeholder="Ciências da Computação" minlength="2">
       </fieldset>
-      <button type="submit" class="flex btn btnFinish btn-post next">
+      <button disabled="true" type="submit" class="flex btn btnFinish btn-post next">
         <img src="img/okIcon.svg" class="btn-img">
         <p>Finish</p>
       </button>

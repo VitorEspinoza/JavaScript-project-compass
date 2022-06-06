@@ -1,3 +1,4 @@
+
 function ValidationField(regex, field, form) {
  
   if (regex.test(field.value) || field.value == "")
@@ -32,6 +33,14 @@ function ValidationForm(form, e){
   } 
 
   });
+
+  listInputs = Array.prototype.slice(form.querySelectorAll('input'));
+  listInputs.forEach(input => {
+  if (!input.parentNode.querySelector('span').classList.contains("invisible")) {  
+    isValidBtn = false;
+  } 
+  });
+  
   let btnSubmit = form.querySelector('.btn-post');
   if (isValidBtn) {
     btnSubmit.classList.add('btnActive');

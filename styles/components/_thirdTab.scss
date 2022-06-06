@@ -1,6 +1,15 @@
 .thirdTab {
     max-width: 515px;
    
+    @include responsive(mobileL)
+    {
+        max-width: 400px;
+    }
+
+    @include responsive(mobileS)
+    {
+        max-width: 300px;
+    }
     #certificates { 
        
         .certificateContainer {
@@ -12,6 +21,18 @@
             width: 100%;
         }
         
+        .certificateContainer {
+            position: relative;
+            .heart-icon {
+                position: absolute;
+                width: 15.68px;
+                height: 13.67px;
+                right: 16.16px;
+                bottom: 45px;
+                cursor: pointer;
+            }
+        }
+        
         .certificates-save {
             align-items: center;
             justify-content: space-between;
@@ -20,6 +41,12 @@
             input {
                 margin-bottom: 18px;
                 max-width: 470px;
+                @include responsive (mobileL){
+                    width: 350px;
+                }
+                @include responsive (mobileS){
+                    width: 260px;
+                }
             }
     
             .heart-icon {
@@ -61,6 +88,11 @@
         }
     }
     fieldset {
+        input {
+            @include responsive(mobileL) {
+                width: 100%;
+            }
+        }
         display: flex;
         flex-direction: column;  
     }
