@@ -1,19 +1,25 @@
+
 function emailvalidation() {
-    const email = document.querySelector('#email');
-    const error = document.querySelector('#error-email');
+    const selectEmail = document.querySelector('#email');
+    const selectError = document.querySelector('#error-email');
     const re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
+    let selectStr = selectEmail.value;
+    let test = re.test(selectStr);
 
-    if(!email.checkValidity()){
-        error.innerHTML = "Invalid email";
-        
+    if (!selectEmail.checkValidity() || !test) {
+        selectError.innerHTML = "E-mail Invaliqud";
+        selectError.style.color = "red";
+        selectError.style.margin = "6px 0";
+        selectError.style.fontSize = "14px";
+        selectError.style.fontFamily = "Nunito";
     }
 
 }
 
-function resetmessage(){
-    let error = document.querySelector('#error-email');
-    if(error.innerHTML == "Invalid email"){
-        error.innerHTML = "";
+function resetmessage() {
+    let selectError = document.querySelector('#error-email');
+    if (selectError.innerHTML == "Invalid email") {
+        selectError.innerHTML = "";
     }
 }

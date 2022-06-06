@@ -6,28 +6,32 @@
         margin-top: 55px;
         margin-bottom: 35px;
     }
-  
-    & > div {
+
+    &>div {
         display: table;
         margin: 0 auto;
     }
 
-    ul 
-    {
+    ul {
         flex-direction: column;
         align-content: center;
-        @include responsive (tablet){
+
+        @include responsive (tablet) {
             flex-direction: row;
             align-content: none;
         }
+
         margin-bottom: 35px;
+
         li {
-            @include responsive (mobileL){
+            @include responsive (mobileL) {
                 width: 400px;
             }
-            @include responsive (mobileS){
+
+            @include responsive (mobileS) {
                 width: 300px;
             }
+
             text-align: center;
             padding: 13px 0;
             width: 170px;
@@ -35,22 +39,29 @@
             @include font(16px, $nunito);
             cursor: pointer;
         }
-    }    
+    }
 
     label {
         @include font(14px, $nunito);
         color: $inputColor;
-      
+
     }
 
     input {
         margin-top: 4px;
-        @include responsive (mobileL){
+
+        @include responsive (mobileL) {
             width: 400px;
         }
+
         @include responsive (mobileS) {
             width: 300px;
         }
+    }
+
+    #error-email{
+        margin: 0;
+        padding: 0;
     }
 
     input::placeholder {
@@ -68,30 +79,87 @@
 
     .check {
         gap: 8px;
-        p {
+
+        label {
             margin: auto 0;
+            @include font(16px, $nunito);
+            font-size: 16px;
+            cursor: pointer;
+            color: $textColor;
         }
+
         input[type=checkbox] {
+            appearance: none;
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+            margin-right: 0px;
+            border-right-width: 2px;
+            border-bottom-width: 2px;
+            border-left-width: 2px;
+            border-top-width: 2px;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-bottom: 0px;
             width: 20px;
             height: 20px;
             border-radius: 2px;
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
         }
+
+        input[type=checkbox]:before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 2px;
+            background: $primaryColor;
+            opacity: 1;
+            transition: all 600ms ease-in-out;
+            transform-origin: bottom left;
+            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+
+        }
+
+        .validation:before {
+            
+            
+
+        }
+
+        input[type=checkbox]:checked:before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 2px;
+            opacity: 0;
+
+        }
+
     }
-    
+
     .info-flex {
         gap: 25px;
         margin-bottom: 28px;
-        
+
         input[type=email] {
-        width: 330px;
-        @include responsive (mobileS) {
-            width: 300px;
+            width: 330px;
+
+            @include responsive (mobileS) {
+                width: 300px;
+            }
+
+            @include responsive (mobileL) {
+                width: 400px;
+            }
         }
-        @include responsive (mobileL){
-            width: 400px;
-        }
-        }
-      
+
         input[type=text] {
             width: 155px;
         }
@@ -99,17 +167,21 @@
 
     .birthday {
         margin-bottom: 45px;
+
         h2 {
             @include font(18px, $nunito);
             color: $inputColor;
             margin-bottom: 14px;
         }
+
         .selects {
             gap: 22px;
         }
+
         .select {
             flex-direction: column;
         }
+
         select {
             margin-top: 4px;
             outline: none;
@@ -119,24 +191,26 @@
             background-color: #FFF;
             border-radius: 4px;
         }
+
         input {
             width: 100px;
             height: 40px;
         }
     }
-    
+
     form {
-        max-width: 515px;      
+        max-width: 515px;
     }
 
     .select-month {
-        @include responsive(mobileS){
-          width: 100px !important;
+        @include responsive(mobileS) {
+            width: 100px !important;
         }
     }
-    
-    .break{
+
+    .break {
         display: none;
+
         @include responsive(mobileL) {
             display: block;
             flex-basis: 100%;
@@ -149,11 +223,12 @@
             width: 115px !important;
         }
     }
+
     .next {
         margin-bottom: 60px;
         margin-top: 43px;
         justify-content: flex-end;
-        
+
         .btn {
             display: flex;
             justify-content: space-around;
@@ -166,9 +241,9 @@
             cursor: pointer;
             // mudar bg-color com base na validacao do form
         }
+
         img {
             display: none; // mudar display com js com base na validacao do form
         }
     }
 }
-
