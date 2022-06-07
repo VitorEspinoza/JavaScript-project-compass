@@ -26,31 +26,68 @@ tabsNavigate(secondTabBtn, secondTab, thirdTab);
 tabsNavigate(thirdTabBtn, thirdTab, viewTab);
 
 // Back or Next Tab
-menuNavigate.forEach((item, index, list) => {
-    if (index == 0 || index == 3 || index == 6) {
-        // Basic Clicked
-        list[index].addEventListener('click', e => {
-            e.preventDefault();
-            firstTab.classList.remove('invisible');
-            secondTab.classList.add('invisible');
-            thirdTab.classList.add('invisible');
-        })
-    } else if (index == 1 || index == 4 || index == 7) {
-        // Social Clicked
-        list[index].addEventListener('click', e => {
-            e.preventDefault();
-            firstTab.classList.add('invisible');
-            secondTab.classList.remove('invisible');
-            thirdTab.classList.add('invisible');
-        })
-    } else {
-        //Certificates Clicked
-        list[index].addEventListener('click', e => {
-            e.preventDefault();
-            firstTab.classList.add('invisible');
-            secondTab.classList.add('invisible');
-            thirdTab.classList.remove('invisible');
-        })
-    }
-});
 
+menuNavigate.forEach((item, index, list) => {
+
+    if (index == 0 || index == 3 || index == 6) {
+
+        // Basic Clicked
+
+        list[index].addEventListener('click', e => {
+
+            e.preventDefault();
+
+            console.log(firstTab.disabled);
+
+            firstTab.classList.remove('invisible');
+
+            secondTab.classList.add('invisible');
+
+            thirdTab.classList.add('invisible');
+
+        });
+
+    } else if (index == 1 || index == 4 || index == 7) {
+
+        // Social Clicked
+
+        list[index].addEventListener('click', e => {
+
+            e.preventDefault();
+
+            if (!firstTabBtn.disabled) {
+
+                firstTab.classList.add('invisible');
+
+                secondTab.classList.remove('invisible');
+
+                thirdTab.classList.add('invisible');
+
+            }
+
+        });
+
+    }
+    else {
+
+        //Certificates Clicked
+
+        list[index].addEventListener('click', e => {
+
+            if (!secondTabBtn.disabled) {
+
+                e.preventDefault();
+
+                firstTab.classList.add('invisible');
+
+                secondTab.classList.add('invisible');
+
+                thirdTab.classList.remove('invisible');
+
+            }
+
+        });
+
+    }
+
+});

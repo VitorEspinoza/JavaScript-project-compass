@@ -1,6 +1,6 @@
 class SaveInfosController {
 
-    constructor() {
+    constructor(personObj) {
         this._view = new View(document.querySelector('.viewTab'));
         this._view.update(personObj);
     }
