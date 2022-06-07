@@ -24,7 +24,7 @@
         <li>Certificates</li>
       </ul>
 
-      <form onsubmit="saveInfosController.SavePersonalInfo(event)">
+      <form>
         <div class="name">
           <label for="Name">Full Name *</label>
           <span class="errorMessageStyle invisible">O nome não pode conter números e caracteres especiais</span> 
@@ -85,7 +85,7 @@
           <p>I accept the term and privacy</p>
         </div>
         <div class="flex nextContainer">
-          <button disabled="true" type="submit" class="btn next btn-post" id="submitFirstTab">
+          <button disabled="true" type="submit" class="btn next btn-post" onsubmit="saveInfosController._SavePersonalInfo()">
             Next 
             <img class="btn-img" src="./assets/vetor-setinha.svg" alt="">
           </button>
@@ -104,7 +104,7 @@
           <li>Certificates</li>
         </ul>
       </div>
-        <form  id="social" onsubmit="saveInfosController.SaveSocialInfo(event)">
+        <form  id="social" onsubmit="saveInfosController._SaveSocialInfo(event)">
           <div class="linkedin">
             <label for="LinkedIn">LinkedIn</label>
             <span class="errorMessageStyle invisible">A url que você digitou é inválida</span> 
@@ -116,7 +116,7 @@
             <input class="input-url required" type="text" placeholder="https://github.com/foobar" name="Github" id="github">
           </div>
           <div class="flex nextContainer">
-            <button disabled="true"  type="submit" class="btn next btn-post" id="submitSecondTab">
+            <button disabled="true"  type="submit" class="btn next btn-post">
               Next
               <img class="btn-img" src="assets/sinal-maior.svg" alt="Next&#62;" id="arrow">
             </button>
@@ -134,7 +134,7 @@
       <li class="active">Certificates</li>
     </ul>
 
-    <form class="flex" onsubmit="saveInfosController.SaveCertificates(event)">
+    <form class="flex" onsubmit="saveInfosController._SaveCertificates(event)">
       <fieldset id="certificates">      
         <label for="certificates">Certificates</label> 
         <div class="certificateContainer">
@@ -150,7 +150,7 @@
       </button>
     </form>
 
-    <form class="flex" onsubmit="saveInfosController.SaveQualifications(event)" >
+    <form class="flex" onsubmit="saveInfosController._SaveQualifications(event)" >
       <fieldset >
         <label for="teamName">Team Name *</label>
         <span class="errorMessageStyle invisible">A url que você digitou é inválida</span> 
@@ -168,7 +168,7 @@
         <span class="errorMessageStyle invisible">O nome da graduação não pode conter números e caracteres especiais</span> 
         <input class="input-name required" type="text" name="graduation" id="graduation" placeholder="Ciências da Computação" minlength="2">
       </fieldset>
-      <button disabled="true" type="submit" class="flex btn btnFinish btn-post next" id="submitThirdTab">
+      <button disabled="true" type="submit" class="flex btn btnFinish btn-post next" onsubmit="SaveInfosController._SavePerson(event)">
         <img src="img/okIcon.svg" class="btn-img">
         <p>Finish</p>
       </button>
@@ -177,7 +177,6 @@
   <section class="viewTab tab container invisible">
 
   </section>
-
   
   <script src="js/app/lib/addCertificates.js"></script> 
   <script src="js/app/lib/LoadBirthdayFields.js"></script> 
@@ -187,11 +186,10 @@
   <script src="js/app/models/SocialInfo.js"></script>
   <script src="js/app/models/Qualification.js"></script>
   <script src="js/app/models/Person.js"></script>
-  <script src="js/app/lib/localstorageData.js"></script>
   <script src="js/app/controllers/SaveInfosController.js"></script>
   <script src="js/views/View.js"></script>
   <script>
-    let saveInfosController = new SaveInfosController();
+    var saveInfosController = new SaveInfosController();
   </script>
   <script src="js/app/lib/validation.js"></script>
 </body>

@@ -22,12 +22,12 @@ class View {
           ${
             `
               <tr>
-                <td>${model._personalInfo._fullName}</td>
-                <td>${model._personalInfo._nickname}</td>
-                <td>${model._personalInfo._email}</td>
-                <td>${model._personalInfo._phone}</td>
-                <td>${model._personalInfo._birthday}</td>
-                <td>${model._personalInfo._age}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
             `
           }
@@ -48,8 +48,8 @@ class View {
           </thead>
           <tbody>
           <tr>
-                <td>${model._socialInfo._linkedin}</td>
-                <td>${model._socialInfo._github}</td>
+                <td></td>
+                <td></td>
               </tr>
           </tbody>
           <tfoot>
@@ -69,10 +69,10 @@ class View {
           </thead>
           <tbody>
             <tr>
-              <td>${model._qualification._certificates}</td>
-              <td>${model._qualification._graduation}</td>
-              <td>${model._qualification._institution}</td>
-              <td>${model._qualification._teamName}</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
           </tbody>
   
