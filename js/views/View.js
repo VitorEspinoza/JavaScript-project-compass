@@ -21,7 +21,7 @@ class View {
           <tbody>
           ${
             `
-              <tr>
+              <tr>${console.log(model)}
                 <td>${model._personalInfo._fullName}</td>
                 <td>${model._personalInfo._nickname}</td>
                 <td>${model._personalInfo._email}</td>
